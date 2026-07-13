@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+.question-container{
+    display: grid;
+    justify-items: center;
+    background-color: whitesmoke;
+    padding: 70px 5%;
+   
+}
+
+.faq-title{
+width: 100%;
+max-width: 800px;
+margin: 0 auto 40px;
+text-align: center;
+
+}
+
+.faq-title h1{
+  font-size: 40px;
+  
+}
+
+.faq-title p{
+  font-size: 18px; 
+  margin-top: 15px;
+  
+}
+.card-body{
+    display: grid;
+     grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+    
+}
+
+.card1{
+   
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+
+}
+
+.card1:hover{
+    transform: translateY(-5px);
+}
+
+.card1 h2{
+    margin-bottom: 15px;
+    font-size: 20px;
+    
+}
+
+.card1 i{
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width:768px){
+
+    .question-container{
+        padding:50px 20px;
+    }
+
+    .faq-title h1{
+        font-size:32px;
+    }
+
+    .faq-title p{
+        font-size:16px;
+    }
+
+    .card-body{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
+
+
+
