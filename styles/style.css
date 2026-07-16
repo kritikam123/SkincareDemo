@@ -10,121 +10,75 @@ body{
     background: #E5E9EA;
 }
 
-.main-container {
-    display: flex ;      
-    flex-direction: row ; 
-    align-items: center;            
-    justify-content: space-between;     
-    padding: 40px 90px;
-                
+#carouselExampleIndicators{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-.main-text-block {
-    flex: 1;                        
-    max-width: 1000px;               
-    text-align: left;  
-    font-size: 20px;
-               
-}
-.main-text-block h2{
-    font-size: 50px;
+.carousel-item img{
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
 }
 
-.main-text-block p{
-    text-align: left;
-    font-size: 18px;
-
+.carousel-fade .carousel-item{
+    transition: opacity 0.3s ease-in-out;
 }
-.main-img-block {
-    flex: 1.2;                        
+
+.carousel-indicators{
+    position: absolute;
+    bottom: 20px;
     display: flex;
-    justify-content: center;       
+    justify-content: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.main-img-block img {
-    width: 100%;                    
-    max-width: 700px;               
-    height: auto;                   
+.carousel-indicators li{
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgba(255, 255, 255, 0.5);
+    border: none;
+    margin: 0 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.button {
-    display: flex ;
-    justify-content: flex-start; 
-    margin-top: 30px;            
+.carousel-indicators li.active{
+    background-color: #333;
+    transform:scaleY(1.5);
+
 }
 
-.button button {
-    background: #222222;         
-    color: #ffffff;              
-    font-family: "Poppins", sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    
-    padding: 12px 36px;
-    border: 2px solid #222222;
-    border-radius: 4px;          
-    cursor: pointer;
-    
-    transition: all 0.3s ease-in-out;
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50%, 50%;
+
 }
 
-.button button:hover {
-    background: transparent;     
-    color: #222222;              
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); 
-    transform: translateY(-2px); 
+.carousel-control-next,
+.carousel-control-prev{
+    width: 8%;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
 
-.button button:active {
-    transform: translateY(0);    
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 300px;
+  }
 }
 
-
-@media (max-width:768px){
-
-    .my-navbar{
-        padding: 0 20px;
-        height: 70px;
-    }
-
-    .logo h2{
-        font-size: 22px;
-    }
-
-    .main-container{
-        flex-direction: column;
-        margin-left: 0;
-        padding: 30px 20px;
-        text-align: center;
-    }
-
-    .main-text-block{
-        max-width: 100%;
-        text-align: center;
-    }
-
-    .main-text-block h2{
-        font-size: 35px;
-    }
-
-    .main-text-block p{
-        font-size: 16px;
-        text-align: center;
-    }
-
-    .main-img-block{
-        margin-top: 30px;
-    }
-
-    .main-img-block img{
-        width: 100%;
-        height: auto;
-    }
-
-    .button{
-        justify-content: center;
-    }
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 220px;
+  }
 }
