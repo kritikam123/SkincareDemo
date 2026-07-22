@@ -67,6 +67,30 @@
     color: gray;
 }
 
+.cart-icon{
+    color: #030303;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+#cart-count{
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media(max-width:768px){
 
 .my-navbar{

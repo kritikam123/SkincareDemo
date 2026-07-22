@@ -46,7 +46,7 @@ const container = document.getElementById("products-container");
 for(let i = 0; i < products.length; i++){
 
     container.innerHTML += `
-        <div class="card">
+        <div class="card" data-id="${products[i].id}">
 
             <img src="${products[i].image}">
 
@@ -65,7 +65,9 @@ for(let i = 0; i < products.length; i++){
             
             <h4>रु.${products[i].price}</h4>
 
-            <button> Add to cart </button>
+            <div id="action-area-${products[i].id}">
+            <button class="add-btn" onclick="addToCart(${products[i].id})"> Add to cart </button>
+            </div>
 
         </div>
     `;

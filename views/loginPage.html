@@ -17,18 +17,18 @@
             <h1> Minimalist</h1>
              <p>Welcome Back! <br>Please enter your details to continue</p>
 
-            <form class="form">
+            <form class="form" id="loginForm">
                 <div class="email">
                 <label>Email </label>
-                <input type="email" placeholder="" required>
+                <input type="email" id="loginEmail" required>
                 </div>
                 <div class="password">
                 <label>Password</label>
-                <input type="password" placeholder="" required>
+                <input type="password" id="loginPassword" required>
                 </div>
                 <div class="box">
                 <label>
-                 <input type="checkbox">
+                 <input type="checkbox" id="rememberMe">
                 Remember me 
                 </label>
                 <a href="#">Forgot Password</a>
@@ -51,5 +51,22 @@
         </div>
 
     </div>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+
+            const stored = JSON.parse(localStorage.getItem('registeredUser'));
+
+            if (stored && stored.email === email && stored.password === password){
+                window.location.href = "/views/user.html";
+            }
+            else{
+                alert("Invalid email or password");
+            }
+        });
+    </script>
 </body>
 </html>

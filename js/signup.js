@@ -1,5 +1,3 @@
-console.log("signup is connected");
-
 const form = document.getElementById("signupForm");
 
 form.addEventListener("submit", function(event) {
@@ -71,6 +69,9 @@ form.addEventListener("submit", function(event) {
         alert("Please accept the Terms of Service and Privacy Policy.");
         return;
     }
+
+    const user = {name, email, phone, password};
+    localStorage.setItem("registeredUser", JSON.stringify(user));
 
     alert("Account created successfully!");
 
