@@ -46,7 +46,7 @@ form.addEventListener("submit", function(event) {
     }
 
     if (password === "") {
-        alert("Password is required.");
+        alert("Password is required.")
         return;
     }
 
