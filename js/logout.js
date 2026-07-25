@@ -4,7 +4,7 @@ document.getElementById("logout-btn").addEventListener("click", function(e) {
     const confirmLogout = confirm("Are you sure you want to log out?");
 
     if(confirmLogout){
-        localStorage.removeItem("user");
+        localStorage.removeItem("loggedInUser");
         localStorage.removeItem("cart");
 
         window.location.href = "/views/loginPage.html";
