@@ -36,6 +36,7 @@ text-align: center;
 .card-body{
     display: flex;
     flex-wrap: wrap;
+    background: white;
     justify-content: center;
     gap: 20px;
     width: 100%;    
@@ -57,6 +58,13 @@ text-align: center;
 
 .card1:hover{
     transform: translateY(-5px);
+}
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .card1 h3{

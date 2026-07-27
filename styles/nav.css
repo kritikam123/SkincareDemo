@@ -16,8 +16,13 @@
 
 .logo{
     justify-self: start;
+    cursor: pointer;
 }
 
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .nav-links{
     display:flex;

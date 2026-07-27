@@ -4,6 +4,8 @@ const products = [
         name: "Vitamin C 10% Face Serum",
         description: "Dullness, Spots & Loss of Elasticity",
         price: 299,
+        category: "Skin",
+        concern: "Dullness",
         image: "/src/assets/products/product0.jpg"
     },
 
@@ -12,6 +14,8 @@ const products = [
         name: "Salicylic Acid + LHA Cleanser",
         description: "Acne, Breakouts & Oiiness",
         price: 270,
+        category: "Skin",
+        concern: "Acne",
         image: "/src/assets/products/product1.jpg"
     },
 
@@ -20,6 +24,8 @@ const products = [
         name: "SPF 50 Sunscreen",
         description: "Sun protection, UV exposure / damage",
         price: 360,
+        category: "Skin",
+        concern: "Sun Protection",
         image: "/src/assets/products/product2.png"
     },
 
@@ -28,6 +34,8 @@ const products = [
         name: "Vitamin B5 Moisturizer",
         description: "Damaged Barrier, Oily & Dehydrated",
         price: 375,
+        category: "Skin",
+        concern: "Dryness",
         image: "/src/assets/products/product3.jpg"
     },
 
@@ -36,9 +44,10 @@ const products = [
         name: "Niacinamide 10% Face Serum",
         description: "Acne Marks, Acne Prone & Oily Skin",
         price: 540,
+        category: "Skin",
+        concern: "Acne",
         image: "/src/assets/products/product4.jpg"
     }
-
 ];
 
 const container = document.getElementById("products-container");

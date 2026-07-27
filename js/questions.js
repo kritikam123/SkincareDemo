@@ -49,3 +49,17 @@ for (let i = 0; i < questions.length; i++){
     </div>
     `;
 }
+
+//open-close on click
+ques_container.addEventListener("click", function(e){
+    const card = e.target.closest(".card1");
+    if(!card) return;
+
+    const isAlreadyOpen = card.classList.contains("active");
+
+    document.querySelectorAll(".card1").forEach(c => c.classList.remove("active"));
+
+    if (!isAlreadyOpen){
+        card.classList.add("active");
+    }
+});

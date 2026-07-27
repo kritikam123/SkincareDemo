@@ -7,11 +7,33 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+     
     <link rel="stylesheet" href="/styles/UserProfile.css">
+    
 </head>
     <title>User Profile</title>
 </head>
 <body>
+<nav class="my-navbar">
+
+  <div class="logo">
+        <a href="/views/user.html">
+            <h2>Minimalist</h2>
+        </a>
+    </div>
+
+    <div class="nav-right">
+
+        <a href="#" class="icon" id="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+
+    </div>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+</nav>
     <div class="profile-box">
         <div class="profile-header">
             <div class="profile-img">
@@ -27,19 +49,19 @@
             <form class="form" id="user-info">
                 <div class="userName">
                     <label>Name</label>
-                    <input type="text" placeholder="your name" id="username">
+                    <input type="text" placeholder="" id="username">
                 </div>
                 <div class="userEmail">
                     <label>Email account</label>
-                    <input type="email" placeholder="yourmail@gmail.com" id="userEmail">
+                    <input type="email" placeholder="" id="userEmail">
                 </div>
                 <div class="userPhone">
                     <label>Mobile Number</label>
-                    <input type="text" placeholder="Add number" id="userPhone">
+                    <input type="text" placeholder="" id="userPhone">
                 </div>
                 <div class="userLocation">
-                    <label>Location</label>
-                    <input type="text" placeholder="Nepal" id="userLocation">
+                    <label>Address</label>
+                    <input type="text" placeholder="" id="userLocation">
                 </div>
                 <div class="button">
                     <button type="submit">Save changes</button>
@@ -48,6 +70,8 @@
             </form>
         </div>
     </div>
+    <script src="/js/logout.js"></script>
+    <script src="/js/profile.js"></script>
     
 </body>
 </html>

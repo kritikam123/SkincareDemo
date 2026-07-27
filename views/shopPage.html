@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/shopPage.css">
+    
+    
+    <title>Shop Collection</title>
+</head>
+<body>
+<nav class="my-navbar">
+
+    <div class="logo">
+        <a href="/views/user.html">
+            <h2>Minimalist</h2>
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="/views/shopPage.html">Shop</a></li>
+        <li><a href="/views/collectionPage.html">Best Sellers</a></li>
+        <li><a href="/views/skinCarePage.html">Skin Care</a></li>
+        <li><a href="/views/hairCarePage.html">Hair Care</a></li>
+        <li><a href="#">Track Order</a></li>
+        
+    </ul>
+
+    <div class="nav-right">
+
+        <a href="#" class="cart-icon" id="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </a>
+        <a href="/views/UserProfile.html" class="icon">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+    </div>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<header class="collection-header">
+    <h1>Collection</h1>
+</header>
+
+<div class="collection-layout" id="shop-layout">
+
+</div>
+<script src="/js/shop.js"></script>
+<script src="/js/cart.js"></script>
+</body>
+</html>

@@ -7,14 +7,63 @@
 body{
     background-color: #E5E9EA;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    min-height: 100vh;
+}
+.my-navbar{
+    display: flex;
+
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 90px;
+    height: 80px;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+   
+}
+
+.logo{
+    justify-self: start;
+}
+
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* Right Side */
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+
+
+.icon{
+    color:#333;
+    font-size:20px;
+    transition:0.3s;
+}
+
+.icon:hover{
+    color: gray;
 }
 
 .profile-box{
     width: 600px;
     height: 700px;
-    background-color: whitesmoke;
+    background-color: white;
     padding: 40px;
     margin-top: 40px;
     display: flex;
@@ -25,7 +74,7 @@ body{
 
 .profile-header{
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: flex-start;
 }
