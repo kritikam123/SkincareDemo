@@ -6,6 +6,7 @@
     "price": 299,
     "category": "Skin",
     "concern": "Dullness",
+    "inStock": true,
     "image": "/assets/products/product0.jpg"
   },
   {
@@ -15,6 +16,7 @@
     "price": 270,
     "category": "Skin",
     "concern": "Acne",
+    "inStock": true,
     "image": "/assets/products/product1.jpg"
   },
   {
@@ -24,6 +26,7 @@
     "price": 360,
     "category": "Best Sellers",
     "concern": "Sun Protection",
+    "inStock": true,
     "image": "/assets/products/product2.png"
   },
   {
@@ -33,6 +36,7 @@
     "price": 375,
     "category": "Skin",
     "concern": "Dryness",
+    "inStock": false,
     "image": "/assets/products/product3.jpg"
   },
   {
@@ -42,6 +46,7 @@
     "price": 540,
     "category": "Best Sellers",
     "concern": "Acne",
+    "inStock": true,
     "image": "/assets/products/product4.jpg"
   },
   {
@@ -51,6 +56,7 @@
     "price": 570,
     "category": "Skin",
     "concern": "Pigmentation",
+    "inStock": false,
     "image": "/assets/products/product5.png"
   },
   {
@@ -60,6 +66,7 @@
     "price": 570,
     "category": "Skin",
     "concern": "Aging",
+    "inStock": true,
     "image": "/assets/products/product6.png"
   },
   {
@@ -69,6 +76,7 @@
     "price": 700,
     "category": "Skin",
     "concern": "Aging",
+    "inStock": true,
     "image": "/assets/products/product7.png"
   },
   {
@@ -78,6 +86,7 @@
     "price": 380,
     "category": "Hair",
     "concern": "Hair Fall",
+    "inStock": true,
     "image": "/assets/products/product8.png"
   },
   {
@@ -87,6 +96,7 @@
     "price": 280,
     "category": "Hair",
     "concern": "Dandruff",
+    "inStock": true,
     "image": "/assets/products/product9.png"
   },
   {
@@ -96,6 +106,7 @@
     "price": 464,
     "category": "Skin",
     "concern": "Aging",
+    "inStock": true,
     "image": "/assets/products/product9.png"
   },
   {
@@ -105,6 +116,7 @@
     "price": 464,
     "category": "Best Sellers",
     "concern": "Aging",
+    "inStock": true,
     "image": "/assets/products/product9.png"
   },
   {
@@ -114,6 +126,7 @@
     "price": 700,
     "category": "Hair",
     "concern": "Aging",
+    "inStock": true,
     "image": "/assets/products/product7.png"
   },
   {
@@ -123,6 +136,7 @@
     "price": 700,
     "category": "Best Sellers",
     "concern": "Aging",
+    "inStock": true,
     "image": "/assets/products/product7.png"
   },
   {
@@ -132,6 +146,7 @@
     "price": 360,
     "category": "Best Sellers",
     "concern": "Dullness",
+    "inStock": true,
     "image": "/assets/products/product10.png"
   },
   {
@@ -141,6 +156,7 @@
     "price": 720,
     "category": "Hair",
     "concern": "Hair Fall",
+    "inStock": true,
     "image": "/assets/products/product11.png"
   },
   {
@@ -150,6 +166,7 @@
     "price": 720,
     "category": "Hair",
     "concern": "Hair Fall",
+    "inStock": true,
     "image": "/assets/products/product12.png"
   },
   {
@@ -159,6 +176,7 @@
     "price": 630,
     "category": "Hair",
     "concern": "Dandruff",
+    "inStock": false,
     "image": "/assets/products/product13.png"
   },
   {
@@ -168,6 +186,7 @@
     "price": 630,
     "category": "Home Product",
     "concern": "Dandruff",
+    "inStock": true,
     "image": "/assets/products/product13.png"
   },
   {
@@ -177,6 +196,7 @@
     "price": 464,
     "category": "Home Product",
     "concern": "Aging",
+    "inStock": true,
     "image": "/assets/products/product9.png"
   },
   {
@@ -186,6 +206,7 @@
     "price": 270,
     "category": "Home Product",
     "concern": "Acne",
+    "inStock": true,
     "image": "/assets/products/product1.jpg"
   },
 
@@ -196,6 +217,7 @@
     "price": 360,
     "category": "Home Product",
     "concern": "Sun Protection",
+    "inStock": true,
     "image": "/assets/products/product2.png"
   }
 ]
