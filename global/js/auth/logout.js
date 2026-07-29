@@ -7,6 +7,6 @@ document.getElementById("logout-btn").addEventListener("click", function(e) {
         localStorage.removeItem("loggedInUser");
         localStorage.removeItem("cart");
 
-        window.location.href = "/pages/auth/login.html";
+        window.location.href = "/pages/auth/login/login.html";
     }
 });

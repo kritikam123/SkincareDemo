@@ -2,42 +2,42 @@ const shopCategories = [
     {
         id: 1,
         category: "Bath & Body",
-        link: "/pages/products/skin-care.html",
+        link: "/pages/skincare/skin-care.html",
         image: "/assets/products/product0.jpg"
     },
 
     {
         id: 2,
         category: "Skin",
-        link: "/pages/products/skin-care.html",
+        link: "/pages/skincare/skin-care.html",
         image: "/assets/products/product1.jpg"
     },
 
     {
         id: 3,
         category: "Hair",
-        link: "/pages/products/hair-care.html",
+        link: "/pages/haircare/hair-care.html",
         image: "/assets/products/product2.png"
     },
 
     {
         id: 4,
         category: "Best Sellers",
-        link: "/pages/products/best-sellers.html",
+        link: "/pages/best-sellers/best-sellers.html",
         image: "/assets/products/product4.jpg"
     },
 
     {
         id: 5,
         category: "New Launches",
-        link: "/pages/products/new-launches.html",
+        link: "/pages/new-launches/new-launches.html",
         image: "/assets/products/product8.png"
     },
 
     {
         id: 6,
         category: "All Products",
-        link: "/pages/products/all-products.html",
+        link: "/pages/all-products/all-products.html",
         image: "/assets/products/product9.png"
     }
 ];
