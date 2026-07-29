@@ -1,0 +1,200 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  background: white;
+}
+
+.details-body {
+  display: flex;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 24px;
+  align-items: flex-start;
+}
+
+.details-img {
+  flex: 1;
+  border: 1px;
+  overflow: hidden;
+}
+
+.details-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.details-content {
+  flex: 1;
+}
+
+.details-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-size: 14.5px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.details-price {
+  margin-bottom: 4px;
+}
+
+.price {
+  font-size: 26px;
+  font-weight: 700;
+  color: black;
+}
+
+.tax-note {
+  font-size: 12px;
+  margin-bottom: 24px;
+}
+
+.action-row {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.qty-selector {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.qty-selector button {
+  width: 40px;
+  height: 46px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.qty-selector button:hover {
+  background: #EFF2EA;
+}
+
+#qty-value {
+  width: 36px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.add-to-cart {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  background: black;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.add-to-cart:hover {
+  background: gray;
+}
+
+.add-to-cart:active {
+  transform: scale(0.98);
+}
+
+.cart-msg {
+  min-height: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* ---------- 7. Accordion (Ideal For / How to Use / Ingredients) ---------- */
+.accordion-item {
+  border-top: 1px solid;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid;
+}
+
+.accordion-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 16px 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordion-icon {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.accordion-item.open .accordion-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 4px;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+}
+
+.accordion-item.open .accordion-body {
+  max-height: 300px;
+  padding: 0 4px 16px;
+}
+
+.accordion-body p {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 800px) {
+  .details-body {
+    flex-direction: column;
+    margin: 24px auto;
+  }
+
+  .details-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
+
+  .details-content h2 {
+    font-size: 22px;
+  }
+}

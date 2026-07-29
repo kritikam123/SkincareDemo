@@ -1,0 +1,127 @@
+// Wait for products to actually be loaded (products-loader.js fetches them async)
+document.addEventListener("productsLoaded", function () {
+
+    const productsContainer = document.getElementById("products-container");
+    const resultCountEl = document.getElementById("results-count");
+    const noResultEl = document.getElementById("no-result");
+    const sortSelect = document.getElementById("sort-select");
+
+    // If a page sets `const PAGE_CATEGORY = "Skin";` (etc.) in a <script> tag
+    // BEFORE this file loads, this page is scoped to that category only.
+    // Leave PAGE_CATEGORY undefined (or omit it) to show every product,
+    // as on the "All Products" page.
+    const baseProducts = (typeof PAGE_CATEGORY !== "undefined")
+        ? products.filter(product => product.category === PAGE_CATEGORY)
+        : products;
+
+    // product cards for a list of products
+    function renderProducts(list) {
+        productsContainer.innerHTML = "";
+
+        if (list.length === 0) {
+            noResultEl.style.display = "block";
+            resultCountEl.textContent = "Showing 0 products";
+            return;
+        }
+
+        noResultEl.style.display = "none";
+        resultCountEl.textContent = `Showing ${list.length} product${list.length > 1 ? "s" : ""}`;
+
+        list.forEach(product => {
+            productsContainer.innerHTML += `
+             <div class="card" data-id="${product.id}">
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.description}</p>
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>रु.${product.price}</h4>
+
+                    <div class="action-area" id="action-area-${product.id}">
+                        <button class="add-btn" data-id="${product.id}">Add to cart</button>
+                    </div>
+                </div>
+            `;
+        });
+
+        // If any of these products are already in the cart (from a previous visit),
+        // show "Added" right away instead of "Add to cart"
+        if (typeof cart !== "undefined") {
+            cart.forEach(item => {
+                if (typeof markAsAdded === "function") markAsAdded(item.id);
+            });
+        }
+    }
+
+    // read current filter/sort state and rerender
+    function applyFilterAndSort() {
+        const checkedCategories = Array.from(document.querySelectorAll(".filter-category:checked")).map(el => el.value);
+        const checkedConcerns = Array.from(document.querySelectorAll(".filter-concern:checked")).map(el => el.value);
+        const minPrice = parseFloat(document.getElementById("price-min").value) || 0;
+        const maxPrice = parseFloat(document.getElementById("price-max").value) || Infinity;
+
+        let filtered = baseProducts.filter(product => {
+            const matchesCategory = checkedCategories.length === 0 || checkedCategories.includes(product.category);
+            const matchesConcern = checkedConcerns.length === 0 || checkedConcerns.includes(product.concern);
+            const matchesPrice = product.price >= minPrice && product.price <= maxPrice;
+            return matchesCategory && matchesConcern && matchesPrice;
+        });
+
+        // Sorting
+        const sortValue = sortSelect.value;
+
+        if (sortValue === "price-low") {
+            filtered.sort((a, b) => a.price - b.price);
+        } else if (sortValue === "price-high") {
+            filtered.sort((a, b) => b.price - a.price);
+        } else if (sortValue === "name-az") {
+            filtered.sort((a, b) => a.name.localeCompare(b.name));
+        } else if (sortValue === "name-za") {
+            filtered.sort((a, b) => b.name.localeCompare(a.name));
+        }
+
+        renderProducts(filtered);
+    }
+
+    document.querySelectorAll(".filter-category, .filter-concern").forEach(checkbox => {
+        checkbox.addEventListener("change", applyFilterAndSort);
+    });
+
+    document.getElementById("price-min").addEventListener("input", applyFilterAndSort);
+    document.getElementById("price-max").addEventListener("input", applyFilterAndSort);
+    sortSelect.addEventListener("change", applyFilterAndSort);
+
+    document.getElementById("clear-filters").addEventListener("click", function () {
+        document.querySelectorAll(".filter-category, .filter-concern").forEach(cb => cb.checked = false);
+        document.getElementById("price-min").value = "";
+        document.getElementById("price-max").value = "";
+        sortSelect.value = "featured";
+        applyFilterAndSort();
+    });
+
+    // mobile filter sidebar open/close
+    const filterSidebar = document.getElementById("filter-sidebar");
+    const openFilterBtn = document.getElementById("open-filter-sidebar");
+
+    if (openFilterBtn) {
+        openFilterBtn.addEventListener("click", function () {
+            filterSidebar.classList.toggle("open");
+        });
+    }
+
+    // listen for Add to cart clicks (delegated)
+    productsContainer.addEventListener("click", function (e) {
+        if (e.target.classList.contains("add-btn") && !e.target.disabled) {
+            const card = e.target.closest(".card");
+            const id = Number(card.dataset.id);
+            if (typeof addToCart === "function") addToCart(id);
+        }
+    });
+
+    renderProducts(baseProducts);
+});

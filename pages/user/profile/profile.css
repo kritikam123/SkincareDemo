@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background: whitesmoke;
+    color: #222222;
+}
+
+.profile-wrap{
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+.row-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+.row-header h2{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.pill-btn{
+    border: 1px solid #E0E0E0;
+    background:  #FFFFFF;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pill-btn:hover {
+    background: #F5F5F5;
+}
+
+.card{
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    background: #FFFFFF;
+}
+
+.card-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label{
+    font-size: 14px;
+}
+.label.muted {
+  color: #9A9A9A;
+}
+
+.value{
+    font-size: 14px;
+    color: #222222;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.value.muted {
+  color: #9A9A9A;
+}
+
+.address-row{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    gap: 14px;
+}
+

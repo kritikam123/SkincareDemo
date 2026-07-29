@@ -6,7 +6,7 @@
     "price": 299,
     "category": "Skin",
     "concern": "Dullness",
-    "image": "/src/assets/products/product0.jpg"
+    "image": "/assets/products/product0.jpg"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "price": 270,
     "category": "Skin",
     "concern": "Acne",
-    "image": "/src/assets/products/product1.jpg"
+    "image": "/assets/products/product1.jpg"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "price": 360,
     "category": "Best Sellers",
     "concern": "Sun Protection",
-    "image": "/src/assets/products/product2.png"
+    "image": "/assets/products/product2.png"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "price": 375,
     "category": "Skin",
     "concern": "Dryness",
-    "image": "/src/assets/products/product3.jpg"
+    "image": "/assets/products/product3.jpg"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "price": 540,
     "category": "Best Sellers",
     "concern": "Acne",
-    "image": "/src/assets/products/product4.jpg"
+    "image": "/assets/products/product4.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "price": 570,
     "category": "Skin",
     "concern": "Pigmentation",
-    "image": "/src/assets/products/product5.png"
+    "image": "/assets/products/product5.png"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "price": 570,
     "category": "Skin",
     "concern": "Aging",
-    "image": "/src/assets/products/product6.png"
+    "image": "/assets/products/product6.png"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "price": 700,
     "category": "Skin",
     "concern": "Aging",
-    "image": "/src/assets/products/product7.png"
+    "image": "/assets/products/product7.png"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "price": 380,
     "category": "Hair",
     "concern": "Hair Fall",
-    "image": "/src/assets/products/product8.png"
+    "image": "/assets/products/product8.png"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "price": 280,
     "category": "Hair",
     "concern": "Dandruff",
-    "image": "/src/assets/products/product9.png"
+    "image": "/assets/products/product9.png"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "price": 464,
     "category": "Skin",
     "concern": "Aging",
-    "image": "/src/assets/products/product9.png"
+    "image": "/assets/products/product9.png"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "price": 464,
     "category": "Best Sellers",
     "concern": "Aging",
-    "image": "/src/assets/products/product9.png"
+    "image": "/assets/products/product9.png"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "price": 700,
     "category": "Hair",
     "concern": "Aging",
-    "image": "/src/assets/products/product7.png"
+    "image": "/assets/products/product7.png"
   },
   {
     "id": 14,
@@ -123,42 +123,79 @@
     "price": 700,
     "category": "Best Sellers",
     "concern": "Aging",
-    "image": "/src/assets/products/product7.png"
+    "image": "/assets/products/product7.png"
   },
   {
     "id": 15,
     "name": "Nonapeptide + AHA 6% Underarm Roll-On",
     "description": "Fades Underarm darkness & Odour",
     "price": 360,
-    "category":"Best Sellers",
+    "category": "Best Sellers",
     "concern": "Dullness",
-    "image":"/src/assets/products/bb_product10.png"
+    "image": "/assets/products/product10.png"
   },
   {
     "id": 16,
     "name": "Hair Growth Actives 18% Hair Serum",
     "description": "Capixyl, Redensyl & Procapil for Hairfall",
     "price": 720,
-    "category":"Hair",
+    "category": "Hair",
     "concern": "Hair Fall",
-    "image":"/src/assets/products/h_product11.png"
+    "image": "/assets/products/product11.png"
   },
   {
     "id": 17,
     "name": "Frizz Control Complex SPF 30 Hair Serum",
     "description": "reduces frizz, smoothens & protects from UV",
     "price": 720,
-    "category":"Hair",
+    "category": "Hair",
     "concern": "Hair Fall",
-    "image":"/src/assets/products/h_product12.png"
+    "image": "/assets/products/product12.png"
   },
   {
     "id": 18,
     "name": "Maleic Bond Repair Complex 5% Hair Mask",
     "description": "Dull, Frizzy, Weak & Damaged Hair",
     "price": 630,
-    "category":"Hair",
+    "category": "Hair",
     "concern": "Dandruff",
-    "image":"/src/assets/products/h_product13.png"
+    "image": "/assets/products/product13.png"
+  },
+  {
+    "id": 19,
+    "name": "Maleic Bond Repair Complex 5% Hair Mask",
+    "description": "Dull, Frizzy, Weak & Damaged Hair",
+    "price": 630,
+    "category": "Home Product",
+    "concern": "Dandruff",
+    "image": "/assets/products/product13.png"
+  },
+  {
+    "id": 20,
+    "name": "Vitamin K + Retinal Eye Cream",
+    "description": "Dark Circles, Fine Lines & Eye Puffiness",
+    "price": 464,
+    "category": "Home Product",
+    "concern": "Aging",
+    "image": "/assets/products/product9.png"
+  },
+  {
+    "id": 21,
+    "name": "Salicylic Acid + LHA Cleanser",
+    "description": "Acne, Breakouts & Oiiness",
+    "price": 270,
+    "category": "Home Product",
+    "concern": "Acne",
+    "image": "/assets/products/product1.jpg"
+  },
+
+    {
+    "id": 22,
+    "name": "SPF 50 Sunscreen",
+    "description": "Sun protection, UV exposure / damage",
+    "price": 360,
+    "category": "Home Product",
+    "concern": "Sun Protection",
+    "image": "/assets/products/product2.png"
   }
 ]

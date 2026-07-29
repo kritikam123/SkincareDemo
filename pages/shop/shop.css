@@ -1,0 +1,88 @@
+* { box-sizing: border-box; }
+
+body{
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+}
+
+.collection-header{
+  text-align: center;
+  padding: 48px 24px 32px;
+}
+
+.collection-header h1{
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.collection-layout{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(12px, 2vw, 24px);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 48px) 64px;
+}
+
+.card{
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--tile-radius);
+  overflow: hidden;
+  cursor: pointer;
+  background: #eee;
+}
+
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card:hover img{
+  transform: scale(1.06);
+}
+
+/* soft gradient so the label stays legible over any photo */
+.card::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0) 45%
+  );
+  pointer-events: none;
+}
+
+.card p{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: 0;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 480px){
+  .collection-layout{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .card p{
+    font-size: 12px;
+    bottom: 12px;
+  }
+}
