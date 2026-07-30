@@ -78,6 +78,6 @@ form.addEventListener("submit", function(event) {
     form.reset();
 
     setTimeout(() => {
-        window.location.href = "/pages/auth/login.html";
+        window.location.href = "/pages/auth/login/login.html";
     }, 500);
 });

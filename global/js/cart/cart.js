@@ -68,11 +68,10 @@ document.addEventListener("productsLoaded", function () {
         }
 
         let total = 0;
-        let totalCount = 0;
+        // let totalCount = 0;
 
         cart.forEach(item => {
             total += item.price * item.quantity;
-            totalCount += item.quantity;
 
             const li = document.createElement("li");
             li.className = "cart-item";
@@ -91,7 +90,7 @@ document.addEventListener("productsLoaded", function () {
             cartItemsEl.appendChild(li);
         });
         cartTotalEl.textContent = `Total: रु.${total}`;
-        cartCountEl.textContent = totalCount;
+        cartCountEl.textContent = cart.length;
     }
 
     // open-close
