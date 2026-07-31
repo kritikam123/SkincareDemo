@@ -1,16 +1,19 @@
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    const email = document.getElementById('loginEmail').value;
-    const password = document.getElementById('loginPassword').value;
+    const email = document.getElementById('loginEmail').value.trim().toLowerCase();
+    const password = document.getElementById('loginPassword').value.trim();
 
-    const stored = JSON.parse(localStorage.getItem('registeredUser'));
+    const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
 
-    if(stored && stored.email === email && stored.password === password) {
-        localStorage.setItem('loggedInUser', JSON.stringify(stored)); // saves loggied user
+    const matchedUser = registeredUsers.find(
+        user => user.email.trim().toLowerCase() === email && user.password.trim() === password
+    );
+
+    if (matchedUser) {
+        localStorage.setItem('loggedInUser', JSON.stringify(matchedUser));
         window.location.href = "/pages/user/user.html";
-    }
-    else{
+    } else {
         alert("Invalid email or password");
     }
 });

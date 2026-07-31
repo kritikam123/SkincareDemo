@@ -70,8 +70,20 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
+    //get existing users array, or start empty
+    let registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
+
+    //check if email already exists
+    const exmailExists = registeredUsers.some(user => user.email === email);
+
+    if(exmailExists){
+        alert("This email already has an account. Please log in instead.");
+        return;
+    }
+
     const user = {name, email, phone, password};
-    localStorage.setItem("registeredUser", JSON.stringify(user));
+    registeredUsers.push(user);
+    localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
 
     alert("Account created successfully!");
 

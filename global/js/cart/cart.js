@@ -1,11 +1,14 @@
 document.addEventListener("productsLoaded", function () {
 
-    // load saved cart from local storage, or start empty
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    //see who is logged in
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    const cartKey = loggedInUser ? `cart_${loggedInUser.email}` : "cart_guest";
 
-    // saving cart to localstorage
-    function saveCart() {
-        localStorage.setItem("cart", JSON.stringify(cart));
+    //load saved cart from local storage of start empty
+    let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+
+    function saveCart(){
+        localStorage.setItem(cartKey, JSON.stringify(cart));
     }
 
     function addToCart(productId) {
