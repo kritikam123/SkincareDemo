@@ -7,7 +7,19 @@
     "category": "Skin",
     "concern": "Dullness",
     "inStock": true,
-    "image": "/assets/products/product0.jpg"
+    "image": "/assets/products/product0.jpg",
+    "subtitle": "Brightens Skin & Fades Dark Spots for a Radiant Glow",
+    "fullDescription": "A potent daily brightening serum with 10% stabilized Vitamin C (Ethyl Ascorbic Acid) to visibly reduce dullness, fade dark spots and even out skin tone, while protecting against everyday environmental damage.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Dullness, Dark Spots & Uneven Tone",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply 3-4 drops on cleansed face and neck, gently pat until absorbed. Follow with moisturizer and sunscreen.",
+      "frequency": "AM, every day."
+    },
+    "ingredients": "Water/Aqua, Ethyl Ascorbic Acid, Propanediol, Glycerin, Ferulic Acid, Sodium Hyaluronate, Panthenol, Tocopherol, Xanthan Gum, Citric Acid, Phenoxyethanol."
   },
   {
     "id": 2,
@@ -17,7 +29,19 @@
     "category": "Skin",
     "concern": "Acne",
     "inStock": true,
-    "image": "/assets/products/product1.jpg"
+    "image": "/assets/products/product1.jpg",
+    "subtitle": "Reduces Sebum & Prevents Breakout Without Drying Skin",
+    "fullDescription": "A daily, gentle exfoliating, acne-fighting face cleanser. It combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Acid) in 2% concentration, providing deep cleansing, pore decongestion & sebum reduction without drying out the skin.",
+    "idealFor": {
+      "skinType": "Oily/Combination, Acne-Prone",
+      "concerns": "Acne, Breakouts & Oiliness",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply on wet face. Pour a small amount into wet hands, rub into a light lather, and massage into face. Rinse thoroughly.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Glycerin, Propanediol, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Decyl Glucoside, Salicylic Acid, Xylitylglucoside, Panthenol, Betaine, Sodium PCA, Avena Sativa (Oat) Kernel Extract, Zinc PCA, Capryloyl Salicylic Acid, Allantoin, Citric Acid."
   },
   {
     "id": 3,
@@ -27,7 +51,19 @@
     "category": "Best Sellers",
     "concern": "Sun Protection",
     "inStock": true,
-    "image": "/assets/products/product2.png"
+    "image": "/assets/products/product2.png",
+    "subtitle": "Broad Spectrum Protection Without the White Cast",
+    "fullDescription": "A lightweight, non-greasy sunscreen with SPF 50 PA++++ that shields skin from UVA/UVB rays and blue light damage, absorbing quickly with a matte, no-white-cast finish suitable for daily wear.",
+    "idealFor": {
+      "skinType": "All Skin Types, including Oily & Sensitive",
+      "concerns": "Sun Damage, Tanning & Photoaging",
+      "suitableFor": "12+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously as the last step of your morning routine, covering face and exposed neck evenly. Reapply every 3-4 hours if outdoors.",
+      "frequency": "AM, daily, and reapply through the day."
+    },
+    "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
   },
   {
     "id": 4,
@@ -37,7 +73,19 @@
     "category": "Skin",
     "concern": "Dryness",
     "inStock": false,
-    "image": "/assets/products/product3.jpg"
+    "image": "/assets/products/product3.jpg",
+    "subtitle": "Deep Hydration for a Repaired, Bouncy Barrier",
+    "fullDescription": "A rich yet fast-absorbing moisturizer with Vitamin B5 (Panthenol) that replenishes moisture, strengthens the skin barrier and soothes dryness, leaving skin soft, plump and comfortable all day.",
+    "idealFor": {
+      "skinType": "Dry & Dehydrated Skin",
+      "concerns": "Dryness, Flakiness & Damaged Barrier",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Take a nickel-sized amount and massage evenly onto face and neck until fully absorbed.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Panthenol, Glycerin, Squalane, Cetearyl Alcohol, Shea Butter, Ceramide NP, Sodium Hyaluronate, Allantoin, Phenoxyethanol."
   },
   {
     "id": 5,
@@ -47,7 +95,19 @@
     "category": "Best Sellers",
     "concern": "Acne",
     "inStock": true,
-    "image": "/assets/products/product4.jpg"
+    "image": "/assets/products/product4.jpg",
+    "subtitle": "Controls Oil & Fades Acne Marks for Clearer Skin",
+    "fullDescription": "A high-strength 10% Niacinamide + 1% Zinc serum that regulates excess sebum, minimizes the look of pores and fades post-acne marks, without disrupting the skin barrier.",
+    "idealFor": {
+      "skinType": "Oily & Acne-Prone Skin",
+      "concerns": "Acne Marks, Enlarged Pores & Oiliness",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply 3-4 drops on cleansed face, gently pat until absorbed. Follow with moisturizer.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Niacinamide, Zinc PCA, Propanediol, Glycerin, Sodium Hyaluronate, Panthenol, Xanthan Gum, Tocopherol, Phenoxyethanol."
   },
   {
     "id": 6,
@@ -57,7 +117,19 @@
     "category": "Skin",
     "concern": "Pigmentation",
     "inStock": false,
-    "image": "/assets/products/product5.png"
+    "image": "/assets/products/product5.png",
+    "subtitle": "Advanced Antioxidant Serum for Spots & Uneven Tone",
+    "fullDescription": "A high-potency 16% Vitamin C serum boosted with Vitamin E and Ferulic Acid for enhanced stability and antioxidant power, targeting stubborn spots, uneven tone and early signs of dullness.",
+    "idealFor": {
+      "skinType": "All Skin Types, except Highly Sensitive",
+      "concerns": "Spots, Uneven Tone & Dull Skin",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply 3-4 drops on cleansed, dry face, gently pat until absorbed. Always follow with sunscreen.",
+      "frequency": "AM, every day. Introduce gradually if new to Vitamin C."
+    },
+    "ingredients": "Water/Aqua, Ascorbic Acid, Tocopherol, Ferulic Acid, Propanediol, Glycerin, Sodium Hyaluronate, Panthenol, Citric Acid, Phenoxyethanol."
   },
   {
     "id": 7,
@@ -67,7 +139,19 @@
     "category": "Skin",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product6.png"
+    "image": "/assets/products/product6.png",
+    "subtitle": "Smoothens Fine Lines & Improves Skin Texture Overnight",
+    "fullDescription": "A night-time anti-aging serum with 0.3% encapsulated Retinol that gradually reduces the look of fine lines, wrinkles and uneven texture while you sleep, minimizing irritation with a slow-release formula.",
+    "idealFor": {
+      "skinType": "Normal to Dry, Mature Skin",
+      "concerns": "Fine Lines, Wrinkles & Loss of Elasticity",
+      "suitableFor": "18+ years of age, not for pregnant/breastfeeding individuals"
+    },
+    "howToUse": {
+      "steps": "Apply 2-3 drops on cleansed, dry face at night, avoiding the eye area. Follow with a moisturizer.",
+      "frequency": "PM, 2-3 times a week initially, building up to nightly use."
+    },
+    "ingredients": "Water/Aqua, Encapsulated Retinol, Propanediol, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Tocopherol, Phenoxyethanol."
   },
   {
     "id": 8,
@@ -77,7 +161,19 @@
     "category": "Skin",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product7.png"
+    "image": "/assets/products/product7.png",
+    "subtitle": "Weekly Resurfacing Peel for Smoother, Brighter Skin",
+    "fullDescription": "A dermatologist-inspired 32% acid blend (AHA, BHA & PHA) that resurfaces dead skin cells, fades hyperpigmentation and softens fine lines for visibly smoother, more even-toned skin.",
+    "idealFor": {
+      "skinType": "All Skin Types, except Highly Sensitive",
+      "concerns": "Hyperpigmentation, Dullness & Fine Lines",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply a thin layer on cleansed, dry face avoiding the eye area. Leave on for 8-10 minutes, then rinse thoroughly with water.",
+      "frequency": "PM, 1-2 times a week. Follow with SPF the next morning."
+    },
+    "ingredients": "Water/Aqua, Glycolic Acid, Lactic Acid, Salicylic Acid, Gluconolactone, Propanediol, Glycerin, Allantoin, Panthenol, Sodium Hydroxide, Phenoxyethanol."
   },
   {
     "id": 9,
@@ -87,7 +183,19 @@
     "category": "Hair",
     "concern": "Hair Fall",
     "inStock": true,
-    "image": "/assets/products/product8.png"
+    "image": "/assets/products/product8.png",
+    "subtitle": "Fades Underarm Darkness & Controls Odour",
+    "fullDescription": "A gentle roll-on with Nonapeptide-1 and 6% AHA that visibly reduces underarm darkness and evens out skin tone, while controlling odour-causing bacteria for all-day freshness.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Underarm Darkness & Odour",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Roll a thin, even layer onto clean, dry underarms.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Nonapeptide-1, Glycolic Acid, Niacinamide, Glycerin, Propanediol, Allantoin, Sodium Hyaluronate, Phenoxyethanol."
   },
   {
     "id": 10,
@@ -97,7 +205,19 @@
     "category": "Hair",
     "concern": "Dandruff",
     "inStock": true,
-    "image": "/assets/products/product9.png"
+    "image": "/assets/products/product9.png",
+    "subtitle": "Hydrating Cleanser That Never Strips the Skin",
+    "fullDescription": "A soap-free, sulfate-free daily cleanser boosted with Aquaporin-activating actives that gently lifts away dirt and impurities while replenishing moisture, leaving skin soft instead of tight.",
+    "idealFor": {
+      "skinType": "Dry & Dehydrated Skin",
+      "concerns": "Skin Tightness & Dehydration",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply on wet face, massage into a light lather and rinse thoroughly with lukewarm water.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Glycerin, Decyl Glucoside, Cocamidopropyl Betaine, Panthenol, Sodium PCA, Betaine, Allantoin, Xylitylglucoside, Citric Acid."
   },
   {
     "id": 11,
@@ -107,7 +227,19 @@
     "category": "Skin",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product9.png"
+    "image": "/assets/products/product9.png",
+    "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
+    "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Dark Circles, Fine Lines & Puffiness",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Dab a small amount gently around the orbital bone using your ring finger, avoiding direct contact with the eyes.",
+      "frequency": "PM, every day."
+    },
+    "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
   },
   {
     "id": 12,
@@ -117,7 +249,19 @@
     "category": "Best Sellers",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product9.png"
+    "image": "/assets/products/product9.png",
+    "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
+    "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Dark Circles, Fine Lines & Puffiness",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Dab a small amount gently around the orbital bone using your ring finger, avoiding direct contact with the eyes.",
+      "frequency": "PM, every day."
+    },
+    "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
   },
   {
     "id": 13,
@@ -127,7 +271,19 @@
     "category": "Hair",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product7.png"
+    "image": "/assets/products/product7.png",
+    "subtitle": "Weekly Resurfacing Peel for Smoother, Brighter Skin",
+    "fullDescription": "A dermatologist-inspired 32% acid blend (AHA, BHA & PHA) that resurfaces dead skin cells, fades hyperpigmentation and softens fine lines for visibly smoother, more even-toned skin.",
+    "idealFor": {
+      "skinType": "All Skin Types, except Highly Sensitive",
+      "concerns": "Hyperpigmentation, Dullness & Fine Lines",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply a thin layer on cleansed, dry face avoiding the eye area. Leave on for 8-10 minutes, then rinse thoroughly with water.",
+      "frequency": "PM, 1-2 times a week. Follow with SPF the next morning."
+    },
+    "ingredients": "Water/Aqua, Glycolic Acid, Lactic Acid, Salicylic Acid, Gluconolactone, Propanediol, Glycerin, Allantoin, Panthenol, Sodium Hydroxide, Phenoxyethanol."
   },
   {
     "id": 14,
@@ -137,7 +293,19 @@
     "category": "Best Sellers",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product7.png"
+    "image": "/assets/products/product7.png",
+    "subtitle": "Weekly Resurfacing Peel for Smoother, Brighter Skin",
+    "fullDescription": "A dermatologist-inspired 32% acid blend (AHA, BHA & PHA) that resurfaces dead skin cells, fades hyperpigmentation and softens fine lines for visibly smoother, more even-toned skin.",
+    "idealFor": {
+      "skinType": "All Skin Types, except Highly Sensitive",
+      "concerns": "Hyperpigmentation, Dullness & Fine Lines",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply a thin layer on cleansed, dry face avoiding the eye area. Leave on for 8-10 minutes, then rinse thoroughly with water.",
+      "frequency": "PM, 1-2 times a week. Follow with SPF the next morning."
+    },
+    "ingredients": "Water/Aqua, Glycolic Acid, Lactic Acid, Salicylic Acid, Gluconolactone, Propanediol, Glycerin, Allantoin, Panthenol, Sodium Hydroxide, Phenoxyethanol."
   },
   {
     "id": 15,
@@ -147,7 +315,19 @@
     "category": "Best Sellers",
     "concern": "Dullness",
     "inStock": true,
-    "image": "/assets/products/product10.png"
+    "image": "/assets/products/product10.png",
+    "subtitle": "Fades Underarm Darkness & Controls Odour",
+    "fullDescription": "A gentle roll-on with Nonapeptide-1 and 6% AHA that visibly reduces underarm darkness and evens out skin tone, while controlling odour-causing bacteria for all-day freshness.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Underarm Darkness & Odour",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Roll a thin, even layer onto clean, dry underarms.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Nonapeptide-1, Glycolic Acid, Niacinamide, Glycerin, Propanediol, Allantoin, Sodium Hyaluronate, Phenoxyethanol."
   },
   {
     "id": 16,
@@ -157,7 +337,19 @@
     "category": "Hair",
     "concern": "Hair Fall",
     "inStock": true,
-    "image": "/assets/products/product11.png"
+    "image": "/assets/products/product11.png",
+    "subtitle": "Reduces Hairfall & Boosts Visible Hair Growth",
+    "fullDescription": "A leave-in scalp serum with Capixyl, Redensyl and Procapil that targets the root causes of hairfall, strengthens hair follicles and supports thicker, fuller-looking hair over time.",
+    "idealFor": {
+      "skinType": "All Scalp Types",
+      "concerns": "Hairfall & Thinning Hair",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Section hair and apply a few drops directly onto the scalp, massaging gently with fingertips. Do not rinse out.",
+      "frequency": "Once daily, preferably at night."
+    },
+    "ingredients": "Water/Aqua, Capixyl, Redensyl, Procapil, Niacinamide, Panthenol, Glycerin, Caffeine, Biotin, Phenoxyethanol."
   },
   {
     "id": 17,
@@ -167,7 +359,19 @@
     "category": "Hair",
     "concern": "Hair Fall",
     "inStock": true,
-    "image": "/assets/products/product12.png"
+    "image": "/assets/products/product12.png",
+    "subtitle": "Tames Frizz & Shields Hair from UV Damage",
+    "fullDescription": "A lightweight hair serum that smoothens the cuticle to control frizz and flyaways, while SPF 30 protects strands from UV-induced dryness and colour fade.",
+    "idealFor": {
+      "skinType": "All Hair Types, especially Frizzy or Colour-Treated Hair",
+      "concerns": "Frizz, Dryness & UV Damage",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply a few drops onto damp or dry hair from mid-length to ends, avoiding the scalp.",
+      "frequency": "Daily, or as needed before sun exposure."
+    },
+    "ingredients": "Water/Aqua, Dimethicone, Ethylhexyl Triazone, Argan Oil, Panthenol, Cyclopentasiloxane, Tocopheryl Acetate, Glycerin, Phenoxyethanol."
   },
   {
     "id": 18,
@@ -177,7 +381,19 @@
     "category": "Hair",
     "concern": "Dandruff",
     "inStock": false,
-    "image": "/assets/products/product13.png"
+    "image": "/assets/products/product13.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
   },
   {
     "id": 19,
@@ -187,7 +403,19 @@
     "category": "Home Product",
     "concern": "Dandruff",
     "inStock": true,
-    "image": "/assets/products/product13.png"
+    "image": "/assets/products/product13.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
   },
   {
     "id": 20,
@@ -197,7 +425,19 @@
     "category": "Home Product",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product9.png"
+    "image": "/assets/products/product9.png",
+    "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
+    "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Dark Circles, Fine Lines & Puffiness",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Dab a small amount gently around the orbital bone using your ring finger, avoiding direct contact with the eyes.",
+      "frequency": "PM, every day."
+    },
+    "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
   },
   {
     "id": 21,
@@ -207,10 +447,21 @@
     "category": "Home Product",
     "concern": "Acne",
     "inStock": true,
-    "image": "/assets/products/product1.jpg"
+    "image": "/assets/products/product1.jpg",
+    "subtitle": "Reduces Sebum & Prevents Breakout Without Drying Skin",
+    "fullDescription": "A daily, gentle exfoliating, acne-fighting face cleanser. It combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Acid) in 2% concentration, providing deep cleansing, pore decongestion & sebum reduction without drying out the skin.",
+    "idealFor": {
+      "skinType": "Oily/Combination, Acne-Prone",
+      "concerns": "Acne, Breakouts & Oiliness",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply on wet face. Pour a small amount into wet hands, rub into a light lather, and massage into face. Rinse thoroughly.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Glycerin, Propanediol, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Decyl Glucoside, Salicylic Acid, Xylitylglucoside, Panthenol, Betaine, Sodium PCA, Avena Sativa (Oat) Kernel Extract, Zinc PCA, Capryloyl Salicylic Acid, Allantoin, Citric Acid."
   },
-
-    {
+  {
     "id": 22,
     "name": "SPF 50 Sunscreen",
     "description": "Sun protection, UV exposure / damage",
@@ -218,6 +469,18 @@
     "category": "Home Product",
     "concern": "Sun Protection",
     "inStock": true,
-    "image": "/assets/products/product2.png"
+    "image": "/assets/products/product2.png",
+    "subtitle": "Broad Spectrum Protection Without the White Cast",
+    "fullDescription": "A lightweight, non-greasy sunscreen with SPF 50 PA++++ that shields skin from UVA/UVB rays and blue light damage, absorbing quickly with a matte, no-white-cast finish suitable for daily wear.",
+    "idealFor": {
+      "skinType": "All Skin Types, including Oily & Sensitive",
+      "concerns": "Sun Damage, Tanning & Photoaging",
+      "suitableFor": "12+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously as the last step of your morning routine, covering face and exposed neck evenly. Reapply every 3-4 hours if outdoors.",
+      "frequency": "AM, daily, and reapply through the day."
+    },
+    "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
   }
 ]

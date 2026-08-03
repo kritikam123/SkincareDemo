@@ -49,6 +49,15 @@
     min-height: 2.6em;
     margin-bottom: 6px;
 
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.5s ease-in-out;
+}
+
+.card:hover h3 {
+  text-decoration-color: currentColor;
 }
 
 .card p{
