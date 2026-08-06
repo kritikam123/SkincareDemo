@@ -482,5 +482,210 @@
       "frequency": "AM, daily, and reapply through the day."
     },
     "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
+  },
+
+  {
+    "id": 23,
+    "name": "SPF 50 Sunscreen",
+    "description": "Sun protection, UV exposure / damage",
+    "price": 360,
+    "category": "Best Sellers",
+    "concern": "Sun Protection",
+    "inStock": true,
+    "image": "/assets/products/product2.png",
+    "subtitle": "Broad Spectrum Protection Without the White Cast",
+    "fullDescription": "A lightweight, non-greasy sunscreen with SPF 50 PA++++ that shields skin from UVA/UVB rays and blue light damage, absorbing quickly with a matte, no-white-cast finish suitable for daily wear.",
+    "idealFor": {
+      "skinType": "All Skin Types, including Oily & Sensitive",
+      "concerns": "Sun Damage, Tanning & Photoaging",
+      "suitableFor": "12+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously as the last step of your morning routine, covering face and exposed neck evenly. Reapply every 3-4 hours if outdoors.",
+      "frequency": "AM, daily, and reapply through the day."
+    },
+    "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
+  },
+
+   {
+    "id": 24,
+    "name": "Vitamin K + Retinal Eye Cream",
+    "description": "Dark Circles, Fine Lines & Eye Puffiness",
+    "price": 464,
+    "category": "Best Sellers",
+    "concern": "Aging",
+    "inStock": true,
+    "image": "/assets/products/product9.png",
+    "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
+    "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Dark Circles, Fine Lines & Puffiness",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Dab a small amount gently around the orbital bone using your ring finger, avoiding direct contact with the eyes.",
+      "frequency": "PM, every day."
+    },
+    "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
+  },
+
+  {
+    "id": 25,
+    "name": "Maleic Bond Repair Complex 5% Hair Mask",
+    "description": "Dull, Frizzy, Weak & Damaged Hair",
+    "price": 630,
+    "category": "Best Sellers",
+    "concern": "Dandruff",
+    "inStock": true,
+    "image": "/assets/products/product13.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
+  },
+
+    {
+    "id": 26,
+    "name": "Maleic Bond Repair Complex 5% Hair Mask",
+    "description": "Dull, Frizzy, Weak & Damaged Hair",
+    "price": 630,
+    "category": "Best Sellers",
+    "concern": "Dandruff",
+    "inStock": true,
+    "image": "/assets/products/product13.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
+  },
+
+   {
+    "id": 27,
+    "name": "Hair Growth Actives 18% Hair Serum",
+    "description": "Capixyl, Redensyl & Procapil for Hairfall",
+    "price": 720,
+    "category": "Best Sellers",
+    "concern": "Hair Fall",
+    "inStock": true,
+    "image": "/assets/products/product11.png",
+    "subtitle": "Reduces Hairfall & Boosts Visible Hair Growth",
+    "fullDescription": "A leave-in scalp serum with Capixyl, Redensyl and Procapil that targets the root causes of hairfall, strengthens hair follicles and supports thicker, fuller-looking hair over time.",
+    "idealFor": {
+      "skinType": "All Scalp Types",
+      "concerns": "Hairfall & Thinning Hair",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Section hair and apply a few drops directly onto the scalp, massaging gently with fingertips. Do not rinse out.",
+      "frequency": "Once daily, preferably at night."
+    },
+    "ingredients": "Water/Aqua, Capixyl, Redensyl, Procapil, Niacinamide, Panthenol, Glycerin, Caffeine, Biotin, Phenoxyethanol."
+  },
+  {
+    "id": 28,
+    "name": "Ceramide & Vitamin B5 Delicate Cleanser",
+    "description": "Tear free, gentle formula that cleanses without drying & irritation",
+    "price": 630,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product14.png",
+    "subtitle": "Tear free, gentle formula that cleanses without drying & irritation",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
+  },
+  {
+    "id": 29,
+    "name": "Ceramide & Squalane Nourishing Lotion",
+    "description": "Deeply nourishes",
+    "price": 810,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product15.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
+  },
+  {
+    "id": 30,
+    "name": "Zinc Oxide + B5 Healing Ointment",
+    "description": "Prevents and soothes skin irritation and diaper rash",
+    "price": 360,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product16.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
+  },
+   {
+    "id": 31,
+    "name": "Provitamin D3 Massage Oil",
+    "description": "Nourishes & soothes baby's delicate skin",
+    "price": 630,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product17.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
   }
+
+
 ]
