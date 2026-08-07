@@ -56,8 +56,6 @@
     cursor:pointer;
 }
 
-/* Right Side */
-
 .nav-right{
     display:flex;
     align-items:center;
@@ -103,6 +101,17 @@ content: attr(data-username);
   transform: translateX(-50%) translateY(0);
 }
 
+.log-icon{
+    color:#333;
+    font-size:20px;
+    transition:0.3s;
+    position: relative;
+}
+
+.log-icon:hover{
+    color: gray;
+}
+
 .cart-icon{
     color: #030303;
     position: relative;
@@ -134,13 +143,10 @@ content: attr(data-username);
 }
 
 
-
-/* Show hamburger */
 .menu-toggle{
     display:block;
 }
 
-/* Mobile menu */
 .nav-links{
 
     position:absolute;
@@ -165,15 +171,13 @@ content: attr(data-username);
     box-shadow:0 5px 10px rgba(0,0,0,.1);
 }
 
-/* Show menu when active */
 .nav-links.active{
     display:flex;
 }
-/* Hide desktop icons */
 .nav-right{
     display:none;
     position:absolute;
-    top:300px;   /* Adjust this value if needed */
+    top:300px;   
     left:0;
     width:100%;
     justify-content:center;
