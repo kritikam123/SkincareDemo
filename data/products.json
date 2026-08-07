@@ -2,8 +2,8 @@
   {
     "id": 1,
     "name": "Vitamin C 10% Face Serum",
-    "description": "Dullness, Spots & Loss of Elasticity",
-    "price": 299,
+    "description": "Brightens dull, uneven skin tone",
+    "price": 350,
     "category": "Skin",
     "concern": "Dullness",
     "inStock": true,
@@ -23,9 +23,9 @@
   },
   {
     "id": 2,
-    "name": "Salicylic Acid + LHA Cleanser",
-    "description": "Acne, Breakouts & Oiiness",
-    "price": 270,
+    "name": "Salicylic Acid Cleanser",
+    "description": "Clears acne without drying skin",
+    "price": 625,
     "category": "Skin",
     "concern": "Acne",
     "inStock": true,
@@ -46,8 +46,8 @@
   {
     "id": 3,
     "name": "SPF 50 Sunscreen",
-    "description": "Sun protection, UV exposure / damage",
-    "price": 360,
+    "description": "Daily broad-spectrum sun protection",
+    "price": 695,
     "category": "Best Sellers",
     "concern": "Sun Protection",
     "inStock": true,
@@ -68,8 +68,8 @@
   {
     "id": 4,
     "name": "Vitamin B5 Moisturizer",
-    "description": "Damaged Barrier, Oily & Dehydrated",
-    "price": 375,
+    "description": "Deep hydration for a repaired barrier",
+    "price": 550,
     "category": "Skin",
     "concern": "Dryness",
     "inStock": false,
@@ -90,8 +90,8 @@
   {
     "id": 5,
     "name": "Niacinamide 10% Face Serum",
-    "description": "Acne Marks, Acne Prone & Oily Skin",
-    "price": 540,
+    "description": "Fades acne marks, controls oil",
+    "price": 825,
     "category": "Best Sellers",
     "concern": "Acne",
     "inStock": true,
@@ -111,9 +111,9 @@
   },
   {
     "id": 6,
-    "name": "Vitamin C + E + Ferulic 16% Face Serum",
-    "description": "Spots, Uneven Tone & Dull Skin",
-    "price": 570,
+    "name": "Vitamin C E Ferulic Serum",
+    "description": "Advanced antioxidant serum for spots",
+    "price": 500,
     "category": "Skin",
     "concern": "Pigmentation",
     "inStock": false,
@@ -134,8 +134,8 @@
   {
     "id": 7,
     "name": "Retinol 0.3% Face Serum",
-    "description": "Fine Lines, Wrinkles & Loss of Elasticity",
-    "price": 570,
+    "description": "Smoothens fine lines overnight",
+    "price": 650,
     "category": "Skin",
     "concern": "Aging",
     "inStock": true,
@@ -155,9 +155,9 @@
   },
   {
     "id": 8,
-    "name": "AHA PHA BHA 32% Face Peel",
-    "description": "Hyperpigmentation, Dullness & Wrinkles",
-    "price": 700,
+    "name": "AHA PHA BHA Face Peel",
+    "description": "Weekly peel for smoother skin",
+    "price": 435,
     "category": "Skin",
     "concern": "Aging",
     "inStock": true,
@@ -177,11 +177,11 @@
   },
   {
     "id": 9,
-    "name": "Nonapeptide + AHA 6% Underarm Roll-On",
-    "description": "HFades Underarm darkness & Odour",
-    "price": 380,
-    "category": "Hair",
-    "concern": "Hair Fall",
+    "name": "Underarm Brightening Roll-On",
+    "description": "Fades underarm darkness & odour",
+    "price": 640,
+    "category": "Skin",
+    "concern": "Dullness",
     "inStock": true,
     "image": "/assets/products/product8.png",
     "subtitle": "Fades Underarm Darkness & Controls Odour",
@@ -199,11 +199,11 @@
   },
   {
     "id": 10,
-    "name": "Aquaporin Booster 5% Cleanser",
-    "description": "Skin Tightness, Dry & Dehyrated Skin",
-    "price": 280,
-    "category": "Hair",
-    "concern": "Dandruff",
+    "name": "Aquaporin Booster Cleanser",
+    "description": "Hydrating cleanser, never strips skin",
+    "price": 595,
+    "category": "Skin",
+    "concern": "Dryness",
     "inStock": true,
     "image": "/assets/products/product9.png",
     "subtitle": "Hydrating Cleanser That Never Strips the Skin",
@@ -221,13 +221,13 @@
   },
   {
     "id": 11,
-    "name": "Vitamin K + Retinal Eye Cream",
-    "description": "Dark Circles, Fine Lines & Eye Puffiness",
-    "price": 464,
-    "category": "Skin",
+    "name": "Vitamin K Retinal Eye Cream",
+    "description": "Brightens dark circles & puffiness",
+    "price": 820,
+    "category": "Best Sellers",
     "concern": "Aging",
     "inStock": true,
-    "image": "/assets/products/product9.png",
+    "image": "/assets/products/product10.png",
     "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
     "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
     "idealFor": {
@@ -243,97 +243,9 @@
   },
   {
     "id": 12,
-    "name": "Vitamin K + Retinal Eye Cream",
-    "description": "Dark Circles, Fine Lines & Eye Puffiness",
-    "price": 464,
-    "category": "Best Sellers",
-    "concern": "Aging",
-    "inStock": true,
-    "image": "/assets/products/product9.png",
-    "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
-    "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
-    "idealFor": {
-      "skinType": "All Skin Types",
-      "concerns": "Dark Circles, Fine Lines & Puffiness",
-      "suitableFor": "18+ years of age"
-    },
-    "howToUse": {
-      "steps": "Dab a small amount gently around the orbital bone using your ring finger, avoiding direct contact with the eyes.",
-      "frequency": "PM, every day."
-    },
-    "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
-  },
-  {
-    "id": 13,
-    "name": "AHA PHA BHA 32% Face Peel",
-    "description": "Hyperpigmentation, Dullness & Wrinkles",
-    "price": 700,
-    "category": "Hair",
-    "concern": "Aging",
-    "inStock": true,
-    "image": "/assets/products/product7.png",
-    "subtitle": "Weekly Resurfacing Peel for Smoother, Brighter Skin",
-    "fullDescription": "A dermatologist-inspired 32% acid blend (AHA, BHA & PHA) that resurfaces dead skin cells, fades hyperpigmentation and softens fine lines for visibly smoother, more even-toned skin.",
-    "idealFor": {
-      "skinType": "All Skin Types, except Highly Sensitive",
-      "concerns": "Hyperpigmentation, Dullness & Fine Lines",
-      "suitableFor": "18+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply a thin layer on cleansed, dry face avoiding the eye area. Leave on for 8-10 minutes, then rinse thoroughly with water.",
-      "frequency": "PM, 1-2 times a week. Follow with SPF the next morning."
-    },
-    "ingredients": "Water/Aqua, Glycolic Acid, Lactic Acid, Salicylic Acid, Gluconolactone, Propanediol, Glycerin, Allantoin, Panthenol, Sodium Hydroxide, Phenoxyethanol."
-  },
-  {
-    "id": 14,
-    "name": "AHA PHA BHA 32% Face Peel",
-    "description": "Hyperpigmentation, Dullness & Wrinkles",
-    "price": 700,
-    "category": "Best Sellers",
-    "concern": "Aging",
-    "inStock": true,
-    "image": "/assets/products/product7.png",
-    "subtitle": "Weekly Resurfacing Peel for Smoother, Brighter Skin",
-    "fullDescription": "A dermatologist-inspired 32% acid blend (AHA, BHA & PHA) that resurfaces dead skin cells, fades hyperpigmentation and softens fine lines for visibly smoother, more even-toned skin.",
-    "idealFor": {
-      "skinType": "All Skin Types, except Highly Sensitive",
-      "concerns": "Hyperpigmentation, Dullness & Fine Lines",
-      "suitableFor": "18+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply a thin layer on cleansed, dry face avoiding the eye area. Leave on for 8-10 minutes, then rinse thoroughly with water.",
-      "frequency": "PM, 1-2 times a week. Follow with SPF the next morning."
-    },
-    "ingredients": "Water/Aqua, Glycolic Acid, Lactic Acid, Salicylic Acid, Gluconolactone, Propanediol, Glycerin, Allantoin, Panthenol, Sodium Hydroxide, Phenoxyethanol."
-  },
-  {
-    "id": 15,
-    "name": "Nonapeptide + AHA 6% Underarm Roll-On",
-    "description": "Fades Underarm darkness & Odour",
-    "price": 360,
-    "category": "Best Sellers",
-    "concern": "Dullness",
-    "inStock": true,
-    "image": "/assets/products/product10.png",
-    "subtitle": "Fades Underarm Darkness & Controls Odour",
-    "fullDescription": "A gentle roll-on with Nonapeptide-1 and 6% AHA that visibly reduces underarm darkness and evens out skin tone, while controlling odour-causing bacteria for all-day freshness.",
-    "idealFor": {
-      "skinType": "All Skin Types",
-      "concerns": "Underarm Darkness & Odour",
-      "suitableFor": "15+ years of age"
-    },
-    "howToUse": {
-      "steps": "Roll a thin, even layer onto clean, dry underarms.",
-      "frequency": "AM & PM, every day."
-    },
-    "ingredients": "Water/Aqua, Nonapeptide-1, Glycolic Acid, Niacinamide, Glycerin, Propanediol, Allantoin, Sodium Hyaluronate, Phenoxyethanol."
-  },
-  {
-    "id": 16,
-    "name": "Hair Growth Actives 18% Hair Serum",
-    "description": "Capixyl, Redensyl & Procapil for Hairfall",
-    "price": 720,
+    "name": "Hair Growth Actives Serum",
+    "description": "Reduces hairfall, boosts regrowth",
+    "price": 660,
     "category": "Hair",
     "concern": "Hair Fall",
     "inStock": true,
@@ -352,12 +264,12 @@
     "ingredients": "Water/Aqua, Capixyl, Redensyl, Procapil, Niacinamide, Panthenol, Glycerin, Caffeine, Biotin, Phenoxyethanol."
   },
   {
-    "id": 17,
-    "name": "Frizz Control Complex SPF 30 Hair Serum",
-    "description": "reduces frizz, smoothens & protects from UV",
-    "price": 720,
+    "id": 13,
+    "name": "Frizz Control Hair Serum",
+    "description": "Tames frizz, shields from UV",
+    "price": 460,
     "category": "Hair",
-    "concern": "Hair Fall",
+    "concern": "Frizz",
     "inStock": true,
     "image": "/assets/products/product12.png",
     "subtitle": "Tames Frizz & Shields Hair from UV Damage",
@@ -374,10 +286,10 @@
     "ingredients": "Water/Aqua, Dimethicone, Ethylhexyl Triazone, Argan Oil, Panthenol, Cyclopentasiloxane, Tocopheryl Acetate, Glycerin, Phenoxyethanol."
   },
   {
-    "id": 18,
-    "name": "Maleic Bond Repair Complex 5% Hair Mask",
-    "description": "Dull, Frizzy, Weak & Damaged Hair",
-    "price": 630,
+    "id": 14,
+    "name": "Bond Repair Hair Mask",
+    "description": "Repairs damage, controls dandruff",
+    "price": 615,
     "category": "Hair",
     "concern": "Dandruff",
     "inStock": false,
@@ -396,7 +308,359 @@
     "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
   },
   {
+    "id": 15,
+    "name": "Ceramide Baby Cleanser",
+    "description": "Tear-free, gentle daily wash",
+    "price": 395,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product14.png",
+    "subtitle": "Tear Free, Gentle Formula That Cleanses Without Drying or Irritation",
+    "fullDescription": "A tear-free, soap-free baby wash with Ceramides and Vitamin B5 that gently cleanses delicate skin and hair without stripping natural moisture, leaving baby's skin soft and comfortable.",
+    "idealFor": {
+      "skinType": "Baby's Delicate & Sensitive Skin",
+      "concerns": "Dryness & Irritation",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Pour a small amount into wet hands, work into a light lather, and gently cleanse baby's body and hair. Rinse thoroughly with lukewarm water.",
+      "frequency": "During daily bath time."
+    },
+    "ingredients": "Water/Aqua, Panthenol, Ceramide NP, Decyl Glucoside, Glycerin, Cocamidopropyl Betaine, Allantoin, Sodium PCA, Phenoxyethanol."
+  },
+  {
+    "id": 16,
+    "name": "Ceramide Squalane Baby Lotion",
+    "description": "Deeply nourishes delicate skin",
+    "price": 635,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product15.png",
+    "subtitle": "Deeply Nourishes Baby's Soft, Delicate Skin",
+    "fullDescription": "A lightweight, fast-absorbing lotion with Ceramides and Squalane that deeply nourishes and locks in moisture, keeping baby's delicate skin soft and comfortable all day long.",
+    "idealFor": {
+      "skinType": "Baby's Dry & Sensitive Skin",
+      "concerns": "Dryness & Moisture Loss",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Massage a generous amount evenly over baby's body until fully absorbed.",
+      "frequency": "Daily, after bath time or as needed."
+    },
+    "ingredients": "Water/Aqua, Squalane, Ceramide NP, Glycerin, Shea Butter, Panthenol, Allantoin, Sodium Hyaluronate, Phenoxyethanol."
+  },
+  {
+    "id": 17,
+    "name": "Zinc Oxide Diaper Ointment",
+    "description": "Soothes and prevents diaper rash",
+    "price": 335,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product16.png",
+    "subtitle": "Prevents & Soothes Skin Irritation and Diaper Rash",
+    "fullDescription": "A protective healing ointment with Zinc Oxide and Vitamin B5 that forms a soothing barrier against moisture, preventing and calming diaper rash and everyday skin irritation.",
+    "idealFor": {
+      "skinType": "Baby's Sensitive & Rash-Prone Skin",
+      "concerns": "Diaper Rash & Irritation",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Apply a thin, even layer onto clean, dry skin at every diaper change, focusing on irritated areas.",
+      "frequency": "As needed, at each diaper change."
+    },
+    "ingredients": "Water/Aqua, Zinc Oxide, Panthenol, Shea Butter, Allantoin, Glycerin, Beeswax, Phenoxyethanol."
+  },
+  {
+    "id": 18,
+    "name": "Provitamin D3 Massage Oil",
+    "description": "Nourishes and soothes baby's skin",
+    "price": 450,
+    "category": "Baby Care",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product17.png",
+    "subtitle": "Nourishes & Soothes Baby's Delicate Skin",
+    "fullDescription": "A gentle, fast-absorbing massage oil enriched with Provitamin D3 that nourishes baby's delicate skin, supports healthy development and makes massage time soft and soothing.",
+    "idealFor": {
+      "skinType": "Baby's Delicate Skin",
+      "concerns": "Dryness & Everyday Nourishment",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Warm a small amount between palms and massage gently over baby's body in circular motions.",
+      "frequency": "Daily, ideally after bath time."
+    },
+    "ingredients": "Water/Aqua, Sweet Almond Oil, Provitamin D3, Glycerin, Panthenol, Tocopheryl Acetate, Phenoxyethanol."
+  },
+  {
     "id": 19,
+    "name": "Alpha Arbutin 2% Face Serum",
+    "description": "Nourishes and soothes baby's skin",
+    "price": 450,
+    "category": "Best Sellers",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product18.png",
+    "subtitle": "Nourishes & Soothes Baby's Delicate Skin",
+    "fullDescription": "A gentle, fast-absorbing massage oil enriched with Provitamin D3 that nourishes baby's delicate skin, supports healthy development and makes massage time soft and soothing.",
+    "idealFor": {
+      "skinType": "Baby's Delicate Skin",
+      "concerns": "Dryness & Everyday Nourishment",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Warm a small amount between palms and massage gently over baby's body in circular motions.",
+      "frequency": "Daily, ideally after bath time."
+    },
+    "ingredients": "Water/Aqua, Sweet Almond Oil, Provitamin D3, Glycerin, Panthenol, Tocopheryl Acetate, Phenoxyethanol."
+  },
+   {
+    "id": 19,
+    "name": "Polyhydroxy Face Toner",
+    "description": "Nourishes and soothes baby's skin",
+    "price": 450,
+    "category": "Best Sellers",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product19.png",
+    "subtitle": "Nourishes & Soothes Baby's Delicate Skin",
+    "fullDescription": "A gentle, fast-absorbing massage oil enriched with Provitamin D3 that nourishes baby's delicate skin, supports healthy development and makes massage time soft and soothing.",
+    "idealFor": {
+      "skinType": "Baby's Delicate Skin",
+      "concerns": "Dryness & Everyday Nourishment",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Warm a small amount between palms and massage gently over baby's body in circular motions.",
+      "frequency": "Daily, ideally after bath time."
+    },
+    "ingredients": "Water/Aqua, Sweet Almond Oil, Provitamin D3, Glycerin, Panthenol, Tocopheryl Acetate, Phenoxyethanol."
+  },
+  {
+    "id": 20,
+    "name": "Polyhydroxy Face Toner",
+    "description": "Nourishes and soothes baby's skin",
+    "price": 450,
+    "category": "Skin",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product19.png",
+    "subtitle": "Nourishes & Soothes Baby's Delicate Skin",
+    "fullDescription": "A gentle, fast-absorbing massage oil enriched with Provitamin D3 that nourishes baby's delicate skin, supports healthy development and makes massage time soft and soothing.",
+    "idealFor": {
+      "skinType": "Baby's Delicate Skin",
+      "concerns": "Dryness & Everyday Nourishment",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Warm a small amount between palms and massage gently over baby's body in circular motions.",
+      "frequency": "Daily, ideally after bath time."
+    },
+    "ingredients": "Water/Aqua, Sweet Almond Oil, Provitamin D3, Glycerin, Panthenol, Tocopheryl Acetate, Phenoxyethanol."
+  },
+  {
+    "id": 21,
+    "name": "Vitamin K + Retinal",
+    "description": "Nourishes and soothes baby's skin",
+    "price": 450,
+    "category": "Best Sellers",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product20.png",
+    "subtitle": "Nourishes & Soothes Baby's Delicate Skin",
+    "fullDescription": "A gentle, fast-absorbing massage oil enriched with Provitamin D3 that nourishes baby's delicate skin, supports healthy development and makes massage time soft and soothing.",
+    "idealFor": {
+      "skinType": "Baby's Delicate Skin",
+      "concerns": "Dryness & Everyday Nourishment",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Warm a small amount between palms and massage gently over baby's body in circular motions.",
+      "frequency": "Daily, ideally after bath time."
+    },
+    "ingredients": "Water/Aqua, Sweet Almond Oil, Provitamin D3, Glycerin, Panthenol, Tocopheryl Acetate, Phenoxyethanol."
+  },
+   {
+    "id": 22,
+    "name": "Vitamin K + Retinal",
+    "description": "Nourishes and soothes baby's skin",
+    "price": 450,
+    "category": "Skin",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product20.png",
+    "subtitle": "Nourishes & Soothes Baby's Delicate Skin",
+    "fullDescription": "A gentle, fast-absorbing massage oil enriched with Provitamin D3 that nourishes baby's delicate skin, supports healthy development and makes massage time soft and soothing.",
+    "idealFor": {
+      "skinType": "Baby's Delicate Skin",
+      "concerns": "Dryness & Everyday Nourishment",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Warm a small amount between palms and massage gently over baby's body in circular motions.",
+      "frequency": "Daily, ideally after bath time."
+    },
+    "ingredients": "Water/Aqua, Sweet Almond Oil, Provitamin D3, Glycerin, Panthenol, Tocopheryl Acetate, Phenoxyethanol."
+  },
+  {
+    "id": 23,
+    "name": "Hair Growth Actives Serum",
+    "description": "Reduces hairfall, boosts regrowth",
+    "price": 660,
+    "category": "Best Sellers",
+    "concern": "Hair Fall",
+    "inStock": true,
+    "image": "/assets/products/product11.png",
+    "subtitle": "Reduces Hairfall & Boosts Visible Hair Growth",
+    "fullDescription": "A leave-in scalp serum with Capixyl, Redensyl and Procapil that targets the root causes of hairfall, strengthens hair follicles and supports thicker, fuller-looking hair over time.",
+    "idealFor": {
+      "skinType": "All Scalp Types",
+      "concerns": "Hairfall & Thinning Hair",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Section hair and apply a few drops directly onto the scalp, massaging gently with fingertips. Do not rinse out.",
+      "frequency": "Once daily, preferably at night."
+    },
+    "ingredients": "Water/Aqua, Capixyl, Redensyl, Procapil, Niacinamide, Panthenol, Glycerin, Caffeine, Biotin, Phenoxyethanol."
+  },
+  {
+    "id": 24,
+    "name": "Frizz Control Hair Serum",
+    "description": "Tames frizz, shields from UV",
+    "price": 460,
+    "category": "Best Sellers",
+    "concern": "Frizz",
+    "inStock": true,
+    "image": "/assets/products/product12.png",
+    "subtitle": "Tames Frizz & Shields Hair from UV Damage",
+    "fullDescription": "A lightweight hair serum that smoothens the cuticle to control frizz and flyaways, while SPF 30 protects strands from UV-induced dryness and colour fade.",
+    "idealFor": {
+      "skinType": "All Hair Types, especially Frizzy or Colour-Treated Hair",
+      "concerns": "Frizz, Dryness & UV Damage",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply a few drops onto damp or dry hair from mid-length to ends, avoiding the scalp.",
+      "frequency": "Daily, or as needed before sun exposure."
+    },
+    "ingredients": "Water/Aqua, Dimethicone, Ethylhexyl Triazone, Argan Oil, Panthenol, Cyclopentasiloxane, Tocopheryl Acetate, Glycerin, Phenoxyethanol."
+  },
+  {
+    "id": 25,
+    "name": "Bond Repair Hair Mask",
+    "description": "Repairs damage, controls dandruff",
+    "price": 615,
+    "category": "Best Sellers",
+    "concern": "Dandruff",
+    "inStock": false,
+    "image": "/assets/products/product13.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
+  },
+  {
+    "id": 26,
+    "name": "Ceramide Baby Cleanser",
+    "description": "Tear-free, gentle daily wash",
+    "price": 395,
+    "category": "Best Sellers",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product14.png",
+    "subtitle": "Tear Free, Gentle Formula That Cleanses Without Drying or Irritation",
+    "fullDescription": "A tear-free, soap-free baby wash with Ceramides and Vitamin B5 that gently cleanses delicate skin and hair without stripping natural moisture, leaving baby's skin soft and comfortable.",
+    "idealFor": {
+      "skinType": "Baby's Delicate & Sensitive Skin",
+      "concerns": "Dryness & Irritation",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Pour a small amount into wet hands, work into a light lather, and gently cleanse baby's body and hair. Rinse thoroughly with lukewarm water.",
+      "frequency": "During daily bath time."
+    },
+    "ingredients": "Water/Aqua, Panthenol, Ceramide NP, Decyl Glucoside, Glycerin, Cocamidopropyl Betaine, Allantoin, Sodium PCA, Phenoxyethanol."
+  },
+  {
+    "id": 27,
+    "name": "Ceramide Squalane Baby Lotion",
+    "description": "Deeply nourishes delicate skin",
+    "price": 635,
+    "category": "Best Sellers",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product15.png",
+    "subtitle": "Deeply Nourishes Baby's Soft, Delicate Skin",
+    "fullDescription": "A lightweight, fast-absorbing lotion with Ceramides and Squalane that deeply nourishes and locks in moisture, keeping baby's delicate skin soft and comfortable all day long.",
+    "idealFor": {
+      "skinType": "Baby's Dry & Sensitive Skin",
+      "concerns": "Dryness & Moisture Loss",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Massage a generous amount evenly over baby's body until fully absorbed.",
+      "frequency": "Daily, after bath time or as needed."
+    },
+    "ingredients": "Water/Aqua, Squalane, Ceramide NP, Glycerin, Shea Butter, Panthenol, Allantoin, Sodium Hyaluronate, Phenoxyethanol."
+  },
+  {
+    "id": 28,
+    "name": "Zinc Oxide Diaper Ointment",
+    "description": "Soothes and prevents diaper rash",
+    "price": 335,
+    "category": "Best Sellers",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product16.png",
+    "subtitle": "Prevents & Soothes Skin Irritation and Diaper Rash",
+    "fullDescription": "A protective healing ointment with Zinc Oxide and Vitamin B5 that forms a soothing barrier against moisture, preventing and calming diaper rash and everyday skin irritation.",
+    "idealFor": {
+      "skinType": "Baby's Sensitive & Rash-Prone Skin",
+      "concerns": "Diaper Rash & Irritation",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Apply a thin, even layer onto clean, dry skin at every diaper change, focusing on irritated areas.",
+      "frequency": "As needed, at each diaper change."
+    },
+    "ingredients": "Water/Aqua, Zinc Oxide, Panthenol, Shea Butter, Allantoin, Glycerin, Beeswax, Phenoxyethanol."
+  },
+  {
+    "id": 29,
+    "name": "Provitamin D3 Massage Oil",
+    "description": "Nourishes and soothes baby's skin",
+    "price": 450,
+    "category": "Best Sellers",
+    "concern": "Dryness",
+    "inStock": true,
+    "image": "/assets/products/product17.png",
+    "subtitle": "Nourishes & Soothes Baby's Delicate Skin",
+    "fullDescription": "A gentle, fast-absorbing massage oil enriched with Provitamin D3 that nourishes baby's delicate skin, supports healthy development and makes massage time soft and soothing.",
+    "idealFor": {
+      "skinType": "Baby's Delicate Skin",
+      "concerns": "Dryness & Everyday Nourishment",
+      "suitableFor": "Newborns & up"
+    },
+    "howToUse": {
+      "steps": "Warm a small amount between palms and massage gently over baby's body in circular motions.",
+      "frequency": "Daily, ideally after bath time."
+    },
+    "ingredients": "Water/Aqua, Sweet Almond Oil, Provitamin D3, Glycerin, Panthenol, Tocopheryl Acetate, Phenoxyethanol."
+  },
+  {
+    "id": 30,
     "name": "Maleic Bond Repair Complex 5% Hair Mask",
     "description": "Dull, Frizzy, Weak & Damaged Hair",
     "price": 630,
@@ -418,7 +682,7 @@
     "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
   },
   {
-    "id": 20,
+    "id": 31,
     "name": "Vitamin K + Retinal Eye Cream",
     "description": "Dark Circles, Fine Lines & Eye Puffiness",
     "price": 464,
@@ -440,7 +704,7 @@
     "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
   },
   {
-    "id": 21,
+    "id": 32,
     "name": "Salicylic Acid + LHA Cleanser",
     "description": "Acne, Breakouts & Oiiness",
     "price": 270,
@@ -462,7 +726,7 @@
     "ingredients": "Water/Aqua, Glycerin, Propanediol, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Decyl Glucoside, Salicylic Acid, Xylitylglucoside, Panthenol, Betaine, Sodium PCA, Avena Sativa (Oat) Kernel Extract, Zinc PCA, Capryloyl Salicylic Acid, Allantoin, Citric Acid."
   },
   {
-    "id": 22,
+    "id": 33,
     "name": "SPF 50 Sunscreen",
     "description": "Sun protection, UV exposure / damage",
     "price": 360,
@@ -482,210 +746,6 @@
       "frequency": "AM, daily, and reapply through the day."
     },
     "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
-  },
-
-  {
-    "id": 23,
-    "name": "SPF 50 Sunscreen",
-    "description": "Sun protection, UV exposure / damage",
-    "price": 360,
-    "category": "Best Sellers",
-    "concern": "Sun Protection",
-    "inStock": true,
-    "image": "/assets/products/product2.png",
-    "subtitle": "Broad Spectrum Protection Without the White Cast",
-    "fullDescription": "A lightweight, non-greasy sunscreen with SPF 50 PA++++ that shields skin from UVA/UVB rays and blue light damage, absorbing quickly with a matte, no-white-cast finish suitable for daily wear.",
-    "idealFor": {
-      "skinType": "All Skin Types, including Oily & Sensitive",
-      "concerns": "Sun Damage, Tanning & Photoaging",
-      "suitableFor": "12+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply generously as the last step of your morning routine, covering face and exposed neck evenly. Reapply every 3-4 hours if outdoors.",
-      "frequency": "AM, daily, and reapply through the day."
-    },
-    "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
-  },
-
-   {
-    "id": 24,
-    "name": "Vitamin K + Retinal Eye Cream",
-    "description": "Dark Circles, Fine Lines & Eye Puffiness",
-    "price": 464,
-    "category": "Best Sellers",
-    "concern": "Aging",
-    "inStock": true,
-    "image": "/assets/products/product9.png",
-    "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
-    "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
-    "idealFor": {
-      "skinType": "All Skin Types",
-      "concerns": "Dark Circles, Fine Lines & Puffiness",
-      "suitableFor": "18+ years of age"
-    },
-    "howToUse": {
-      "steps": "Dab a small amount gently around the orbital bone using your ring finger, avoiding direct contact with the eyes.",
-      "frequency": "PM, every day."
-    },
-    "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
-  },
-
-  {
-    "id": 25,
-    "name": "Maleic Bond Repair Complex 5% Hair Mask",
-    "description": "Dull, Frizzy, Weak & Damaged Hair",
-    "price": 630,
-    "category": "Best Sellers",
-    "concern": "Dandruff",
-    "inStock": true,
-    "image": "/assets/products/product13.png",
-    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
-    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
-    "idealFor": {
-      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
-      "concerns": "Damage, Frizz & Dandruff",
-      "suitableFor": "15+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
-      "frequency": "1-2 times a week."
-    },
-    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
-  },
-
-    {
-    "id": 26,
-    "name": "Maleic Bond Repair Complex 5% Hair Mask",
-    "description": "Dull, Frizzy, Weak & Damaged Hair",
-    "price": 630,
-    "category": "Best Sellers",
-    "concern": "Dandruff",
-    "inStock": true,
-    "image": "/assets/products/product13.png",
-    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
-    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
-    "idealFor": {
-      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
-      "concerns": "Damage, Frizz & Dandruff",
-      "suitableFor": "15+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
-      "frequency": "1-2 times a week."
-    },
-    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
-  },
-
-   {
-    "id": 27,
-    "name": "Hair Growth Actives 18% Hair Serum",
-    "description": "Capixyl, Redensyl & Procapil for Hairfall",
-    "price": 720,
-    "category": "Best Sellers",
-    "concern": "Hair Fall",
-    "inStock": true,
-    "image": "/assets/products/product11.png",
-    "subtitle": "Reduces Hairfall & Boosts Visible Hair Growth",
-    "fullDescription": "A leave-in scalp serum with Capixyl, Redensyl and Procapil that targets the root causes of hairfall, strengthens hair follicles and supports thicker, fuller-looking hair over time.",
-    "idealFor": {
-      "skinType": "All Scalp Types",
-      "concerns": "Hairfall & Thinning Hair",
-      "suitableFor": "18+ years of age"
-    },
-    "howToUse": {
-      "steps": "Section hair and apply a few drops directly onto the scalp, massaging gently with fingertips. Do not rinse out.",
-      "frequency": "Once daily, preferably at night."
-    },
-    "ingredients": "Water/Aqua, Capixyl, Redensyl, Procapil, Niacinamide, Panthenol, Glycerin, Caffeine, Biotin, Phenoxyethanol."
-  },
-  {
-    "id": 28,
-    "name": "Ceramide & Vitamin B5 Delicate Cleanser",
-    "description": "Tear free, gentle formula that cleanses without drying & irritation",
-    "price": 630,
-    "category": "Baby Care",
-    "concern": "Dryness",
-    "inStock": true,
-    "image": "/assets/products/product14.png",
-    "subtitle": "Tear free, gentle formula that cleanses without drying & irritation",
-    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
-    "idealFor": {
-      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
-      "concerns": "Damage, Frizz & Dandruff",
-      "suitableFor": "15+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
-      "frequency": "1-2 times a week."
-    },
-    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
-  },
-  {
-    "id": 29,
-    "name": "Ceramide & Squalane Nourishing Lotion",
-    "description": "Deeply nourishes",
-    "price": 810,
-    "category": "Baby Care",
-    "concern": "Dryness",
-    "inStock": true,
-    "image": "/assets/products/product15.png",
-    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
-    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
-    "idealFor": {
-      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
-      "concerns": "Damage, Frizz & Dandruff",
-      "suitableFor": "15+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
-      "frequency": "1-2 times a week."
-    },
-    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
-  },
-  {
-    "id": 30,
-    "name": "Zinc Oxide + B5 Healing Ointment",
-    "description": "Prevents and soothes skin irritation and diaper rash",
-    "price": 360,
-    "category": "Baby Care",
-    "concern": "Dryness",
-    "inStock": true,
-    "image": "/assets/products/product16.png",
-    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
-    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
-    "idealFor": {
-      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
-      "concerns": "Damage, Frizz & Dandruff",
-      "suitableFor": "15+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
-      "frequency": "1-2 times a week."
-    },
-    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
-  },
-   {
-    "id": 31,
-    "name": "Provitamin D3 Massage Oil",
-    "description": "Nourishes & soothes baby's delicate skin",
-    "price": 630,
-    "category": "Baby Care",
-    "concern": "Dryness",
-    "inStock": true,
-    "image": "/assets/products/product17.png",
-    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
-    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
-    "idealFor": {
-      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
-      "concerns": "Damage, Frizz & Dandruff",
-      "suitableFor": "15+ years of age"
-    },
-    "howToUse": {
-      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
-      "frequency": "1-2 times a week."
-    },
-    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
   }
-
 
 ]
