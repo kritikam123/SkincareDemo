@@ -8,7 +8,7 @@
 
 .products-section{
      background-color: whitesmoke;
-     padding: 70px 5%;
+     padding: 70px 90px;
      display: grid;
      
 }
@@ -108,6 +108,22 @@
 
 .card button:hover{
     background: gray;
+}
+
+.add-btn.available {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.add-btn.out-of-stock {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: not-allowed;
 }
 
 .button1 {
