@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/global/css/collections.css">
     <link rel="stylesheet" href="/global/css/products.css">
     <link rel="stylesheet" href="/global/css/navbar.css">
+    <link rel="stylesheet" href="/global/css/cart.css">
     <title>Minimalist | Collections</title>
 
 </head>
@@ -36,7 +37,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cart-count">0</span>
         </a>
-       <a href="/pages/auth/login/login.html" class="icon">
+       <a href="/pages/auth/login/login.html" class="icon" id="user-icon">
             <i class="fa-solid fa-user"></i>
         </a>
 
@@ -86,7 +87,6 @@
     </div>
 </aside>
 
-<!-- //products -->
  <div class="product-main">
 
     <div class="product-toolbar">
@@ -115,7 +115,6 @@
     <div class="pagination" id="pagination"></div>
  </div>
 
- <!-- cart drawer -->
 <div class="cart-overlay" id="cart-overlay"></div>
 <aside class="cart-drawer" id="cart-drawer">
     <div class="cart-drawer-header">

@@ -12,6 +12,7 @@ document.addEventListener("productsLoaded", function () {
                 <img src="${product.image}">
                 <h3 class="product-info-details" data-id="${product.id}">${product.name}</h3>
                 <h4>रु.${product.price}</h4>
+                <p>${product.description}</p>
                 <div class="action-area" id="action-area-${product.id}">
                     <button 
                         class="add-btn" 
@@ -25,7 +26,6 @@ document.addEventListener("productsLoaded", function () {
         `;
   }
 
-  // Hands control over to the shared filter/sort logic in filters.js
   initProductFilters({
     baseProducts: babyProducts,
     container: container,
