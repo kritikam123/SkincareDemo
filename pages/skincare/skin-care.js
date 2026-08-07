@@ -15,12 +15,12 @@ document.addEventListener("productsLoaded", function () {
                 <h4>रु.${product.price}</h4>
                 <div class="action-area" id="action-area-${product.id}">
                     <button 
-                        class="add-btn" 
-                        data-id="${product.id}"
-                        ${outOfStock ? "disabled" : ""}
-                    >
-                        ${outOfStock ? "Out of stock" : "Add to cart"}
-                    </button>
+    class="add-btn ${outOfStock ? "out-of-stock" : "available"}"
+    data-id="${product.id}"
+    ${outOfStock ? "disabled" : ""}
+>
+    ${outOfStock ? "Out of stock" : "Add to cart"}
+</button>
                 </div>
             </div>
         `;
