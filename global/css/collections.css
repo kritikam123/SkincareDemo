@@ -9,9 +9,13 @@ body{
     background-color: whitesmoke;
 }
 
+.product-main{
+    width: 80%;
+}
+
 .collection-header{
     text-align: center;
-    padding: 32px 20px 20px;
+    padding: 32px 90px;
 }
 
 .collection-header h1{
@@ -30,13 +34,13 @@ body{
     width: 100%;
     justify-content: center;
     gap: 28px;
-    padding: 0 4% 60px;
+    padding: 0 90px;
     margin: 0 auto;
 }
 
 .filter-sidebar{
     background: white;
-    width: 30%;
+    width: 20%;
     padding: 20px;
     height: fit-content;
     position: sticky;
@@ -62,7 +66,6 @@ body{
     border: none;
     font-size: 13px;
     color: #555;
-    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -161,8 +164,6 @@ body{
     gap: 20px;
 }
 
-/* cart drawer */
-/* ---------- Cart icon ---------- */
 .cart-icon {
     position: relative;
     cursor: pointer;
@@ -187,12 +188,11 @@ body{
 }
 
 .add-btn.added {
-    background: gray;
+    background: black;
     cursor: not-allowed;
     opacity: 0.8;
 }
 
-/* ---------- Dark background behind drawer ---------- */
 .cart-overlay {
     position: fixed;
     inset: 0;
@@ -208,7 +208,6 @@ body{
     pointer-events: auto;
 }
 
-/* ---------- Sliding drawer ---------- */
 .cart-drawer {
     position: fixed;
     top: 0;
@@ -244,7 +243,6 @@ body{
     line-height: 1;
 }
 
-/* ---------- Cart items list ---------- */
 .cart-items {
     list-style: none;
     flex: 1;
@@ -288,7 +286,6 @@ body{
     font-size: 14px;
 }
 
-/* ---------- Quantity control (used both in card and drawer) ---------- */
 .quantity-control {
     display: flex;
     align-items: center;
@@ -311,7 +308,6 @@ body{
     background: gray;
 }
 
-/* ---------- Cart footer ---------- */
 .cart-footer {
     padding: 20px;
     border-top: 1px solid #ddd;
@@ -335,6 +331,31 @@ body{
 
 .checkout-btn:hover {
     background: gray;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.prev-page{
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+}
+
+.next-page{
+height: 30px;
+width: 30px;
+border-radius: 8px;  
+background-color: black;
+color: white;
 }
 
 @media (max-width: 768px) {
