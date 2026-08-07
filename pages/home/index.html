@@ -20,7 +20,7 @@
     <title>Minimalist Store</title>
 </head>
 
-<body>
+<div>
 <nav class="my-navbar">
 
     <div class="logo">
@@ -36,7 +36,7 @@
         <li><a href="/pages/best-sellers/best-sellers.html">Best Sellers</a></li>
         <li><a href="/pages/skincare/skin-care.html">Skin Care</a></li>
         <li><a href="/pages/haircare/hair-care.html">Hair Care</a></li>
-        <li><a href="#">Track Order</a></li>
+        <li><a href="/pages/babycare/babycare.html">Baby Care</a></li>
     </ul>
 
     
@@ -48,7 +48,7 @@
             <span id="cart-count">0</span>
         </a>
 
-        <a href="/pages/auth/login/login.html" class="icon">
+        <a href="/pages/auth/login/login.html" class="icon" id="user-icon">
             <i class="fa-solid fa-user"></i>
         </a>
 
@@ -76,19 +76,16 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="dots-container">
+</div>
+<div class="dots-container">
     <div style="text-align: center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
     </div>
-
-</div>
-
-
 </section>
+
 
 <section id="product">
 <div class="products-section">
@@ -96,7 +93,7 @@
 <div class="products" id="products-container">
     </div>
     <div class="button1">
-        <button onclick="window.location.href='/pages/shop/shop.html'">View all products</button>
+        <button onclick="window.location.href='/pages/best-sellers/best-sellers.html'">View all products</button>
     </div>
 
 </div>
@@ -188,7 +185,7 @@
     <li>Get special offers & discounts</li>
 </ul>
 <div class="down_button">
-        <button>Playstore</button>
+        <button onclick="window.location.href='https://play.google.com/store/apps/details?id=minimalistinc.android.app&pcampaignid=web_share'">Playstore</button>
     </div>
 </div>
 
@@ -264,7 +261,6 @@
         </div>
 
     </aside>
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script>
 const menu = document.querySelector(".menu-toggle");
@@ -288,7 +284,7 @@ menu.addEventListener("click", () => {
 </script>
 <script src="/global/js/products/products-loader.js"></script>
 <script src="/global/js/products/products.js"></script> 
-<!-- see this -->
+<script src="/global/js/nav/profileIcon.js"></script>
 <script src="/global/js/cart/cart.js"></script>
 <script src="/global/js/carousel/carousel.js"></script>
 <script src="/pages/home/questions.js"></script>

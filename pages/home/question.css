@@ -52,12 +52,16 @@ text-align: center;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
     transition:0.3s;
     cursor: pointer;
+    margin-bottom: 8px;
+    background-color: white;
+    
 
 }
 
 
 .card1:hover{
     transform: translateY(-5px);
+    background-color: white;
 }
 
 .card-header{
