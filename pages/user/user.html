@@ -8,7 +8,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-     <link rel="stylesheet" href="/pages/user/user.css">
+     <link rel="stylesheet" href="/pages/home/home.css">
      <link rel="stylesheet" href="/global/css/navbar.css">
      <link rel="stylesheet" href="/global/css/carousel.css">
      <link rel="stylesheet" href="/global/css/products.css">
@@ -20,13 +20,15 @@
     <title>Minimalist Store</title>
 </head>
 
-<body>
+<div>
 <nav class="my-navbar">
 
     <div class="logo">
         <a href="/pages/user/user.html">
             <h2>Minimalist</h2>
+
         </a>
+        
     </div>
 
     <ul class="nav-links">
@@ -34,7 +36,7 @@
         <li><a href="/pages/user/best-sellers/best-sellers.html">Best Sellers</a></li>
         <li><a href="/pages/user/skincare/skin-care.html">Skin Care</a></li>
         <li><a href="/pages/user/haircare/hair-care.html">Hair Care</a></li>
-        <li><a href="#">Track Order</a></li>
+        <li><a href="/pages/user/babycare/babycare.html">Baby Care</a></li>
     </ul>
 
     
@@ -46,7 +48,7 @@
             <span id="cart-count">0</span>
         </a>
 
-        <a href="/pages/user/profile/profile.html" class="icon">
+        <a href="/pages/user/profile/profile.html" class="icon" id="user-icon">
             <i class="fa-solid fa-user"></i>
         </a>
 
@@ -74,26 +76,24 @@
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-    <div class="dots-container">
+</div>
+<div class="dots-container">
     <div style="text-align: center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
     </div>
-
-</div>
-
-
 </section>
+
+
 <section id="product">
 <div class="products-section">
     <h2>Our Best Sellers</h2>
 <div class="products" id="products-container">
     </div>
     <div class="button1">
-        <button onclick="window.location.href='/pages/products/shop.html'">View all products</button>
+        <button onclick="window.location.href='/pages/user/best-sellers/best-sellers.html'">View all products</button>
     </div>
 
 </div>
@@ -185,7 +185,7 @@
     <li>Get special offers & discounts</li>
 </ul>
 <div class="down_button">
-        <button>Playstore</button>
+        <button onclick="window.location.href='https://play.google.com/store/apps/details?id=minimalistinc.android.app&pcampaignid=web_share'">Playstore</button>
     </div>
 </div>
 
@@ -261,7 +261,6 @@
         </div>
 
     </aside>
-
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script>
 const menu = document.querySelector(".menu-toggle");
@@ -285,6 +284,7 @@ menu.addEventListener("click", () => {
 </script>
 <script src="/global/js/products/products-loader.js"></script>
 <script src="/global/js/products/products.js"></script> 
+<script src="/global/js/nav/profileIcon.js"></script>
 <!-- see this -->
 <script src="/global/js/cart/cart.js"></script>
 <script src="/global/js/carousel/carousel.js"></script>

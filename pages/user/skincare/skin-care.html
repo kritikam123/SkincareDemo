@@ -11,6 +11,7 @@
      <link rel="stylesheet" href="/global/css/collections.css">
     <link rel="stylesheet" href="/global/css/products.css">
     <link rel="stylesheet" href="/global/css/navbar.css">
+    <link rel="stylesheet" href="/global/css/cart.css">
     <title>Minimalist | Skin Care Collections</title>
 
 </head>
@@ -19,26 +20,26 @@
 <nav class="my-navbar">
 
     <div class="logo">
-        <a href="/pages/user/user.html">
+      <a href="/pages/user/user.html">
             <h2>Minimalist</h2>
         </a>
     </div>
 
-     <ul class="nav-links">
+    <ul class="nav-links">
         <li><a href="/pages/user/shop/shop.html">Shop</a></li>
         <li><a href="/pages/user/best-sellers/best-sellers.html">Best Sellers</a></li>
         <li><a href="/pages/user/skincare/skin-care.html">Skin Care</a></li>
         <li><a href="/pages/user/haircare/hair-care.html">Hair Care</a></li>
-        <li><a href="#">Track Order</a></li>
+        <li><a href="/pages/user/babycare/babycare.html">Baby Care</a></li>
     </ul>
 
-
     <div class="nav-right">
+
         <a href="#" class="cart-icon" id="cart-icon">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cart-count">0</span>
         </a>
-        <a href="/pages/user/profile/profile.html" class="icon">
+        <a href="/pages/user/profile/profile.html" class="icon" id="user-icon">
             <i class="fa-solid fa-user"></i>
         </a>
     </div>
@@ -48,7 +49,8 @@
 </nav>
 
 <header class="collection-header">
-    <h1>Skin & Body Care</h1>
+    <h1>Skin Care</h1>
+    <p>Loved by your skin, chosen by you for everyday care</p>
 </header>
 
 <div class="collection-layout">
@@ -80,12 +82,11 @@
 
     <div class="filter-group">
         <h4>Availability</h4>
-        <label><input type="checkbox" class="filter-concern" value="Instock"> In stock</label>
-        <label><input type="checkbox" class="filter-concern" value="Outofstock"> Out of stock</label>
+        <label><input type="checkbox" class="filter-availability" value="Instock"> In stock</label>
+        <label><input type="checkbox" class="filter-availability" value="Outofstock"> Out of stock</label>
     </div>
 </aside>
 
-<!-- //products -->
  <div class="product-main">
     <div class="product-toolbar">
         <button class="mobile-filter-btn" id="open-filter-sidebar">
@@ -111,9 +112,9 @@
 
         </p>
     </div>
+     <div class="pagination" id="pagination"></div>
  </div>
 
- <!-- cart drawer -->
 <div class="cart-overlay" id="cart-overlay"></div>
 <aside class="cart-drawer" id="cart-drawer">
     <div class="cart-drawer-header">
@@ -128,8 +129,11 @@
 </aside>
 
 <script src="/global/js/products/products-loader.js"></script>
+<script src="/global/js/products/pagination.js"></script>
 <script src="/global/js/products/filters.js"></script>
-<script src="/pages/skincare/skin-care.js"></script>
+<script src="/global/js/nav/profileIcon.js"></script>
+<script src="/pages/user/skincare/skin-care.js"></script>
+<script src="/global/js/nav/navbar.js"></script>
 <script src="/global/js/cart/cart.js"></script>
 </body>
 </html>

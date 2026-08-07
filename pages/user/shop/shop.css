@@ -8,7 +8,7 @@ body{
 
 .collection-header{
   text-align: center;
-  padding: 48px 24px 32px;
+  padding: 40px 90px;
 }
 
 .collection-header h1{
@@ -20,16 +20,20 @@ body{
 
 .collection-layout{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: clamp(12px, 2vw, 24px);
   width: 100%;
+  height: 80%;
   margin: 0 auto;
-  padding: 0 clamp(16px, 4vw, 48px) 64px;
+  padding: 40px 90px;
+  
 }
 
 .card{
   position: relative;
-  aspect-ratio: 4 / 5;
+  height: 100%;
+  width: 100%;
+  /* aspect-ratio: 4 / 5; */
   overflow: hidden;
   cursor: pointer;
   background: #eee;
@@ -39,7 +43,7 @@ body{
   width: 100%;
   height: 100%;
   object-fit: contain;
-  display: block;
+  margin-bottom: 12px;
   transition: transform 0.5s ease;
 }
 

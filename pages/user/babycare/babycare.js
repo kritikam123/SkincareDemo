@@ -1,7 +1,7 @@
 document.addEventListener("productsLoaded", function () {
   const container = document.getElementById("products-container");
-  const skinProducts = products.filter(
-    (product) => product.category === "Skin",
+  const babyProducts = products.filter(
+    (product) => product.category === "Baby Care",
   );
 
   function renderCard(product) {
@@ -11,10 +11,10 @@ document.addEventListener("productsLoaded", function () {
             <div class="card ${outOfStock ? "out-of-stock" : ""}" data-id="${product.id}">
                 <img src="${product.image}">
                 <h3 class="product-info-details" data-id="${product.id}">${product.name}</h3>
-                <p>${product.description}</p>
                 <h4>रु.${product.price}</h4>
+                <p>${product.description}</p>
                 <div class="action-area" id="action-area-${product.id}">
-                   <button 
+                    <button 
     class="add-btn ${outOfStock ? "out-of-stock" : "available"}"
     data-id="${product.id}"
     ${outOfStock ? "disabled" : ""}
@@ -28,7 +28,7 @@ document.addEventListener("productsLoaded", function () {
 
   // Hands control over to the shared filter/sort logic in filters.js
   initProductFilters({
-    baseProducts: skinProducts,
+    baseProducts: babyProducts,
     container: container,
     renderCard: renderCard,
   });
