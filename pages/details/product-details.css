@@ -9,6 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: #222222;
   background: white;
+  
 }
 
 .details-body {
@@ -97,31 +98,50 @@ body {
   background: #EFF2EA;
 }
 
+#qty-minus{
+    width: 28px;
+    height: 28px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+#qty-plus{
+      width: 28px;
+    height: 28px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 8px;
+}
+
 #qty-value {
   width: 36px;
   text-align: center;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 18px;
 }
 
-.add-to-cart {
-  flex: 1;
-  border: none;
-  border-radius: 8px;
-  background: black;
-  color: #ffffff;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.15s ease, transform 0.1s ease;
+.add-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.add-to-cart:hover {
+.add-btn:hover {
   background: gray;
 }
 
-.add-to-cart:active {
+.add-btn:active {
   transform: scale(0.98);
 }
 
