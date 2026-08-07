@@ -11,15 +11,16 @@ document.addEventListener("productsLoaded", function () {
             <div class="card ${outOfStock ? "out-of-stock" : ""}" data-id="${product.id}">
                 <img src="${product.image}">
                 <h3 class="product-info-details" data-id="${product.id}">${product.name}</h3>
+                <p>${product.description}</p>
                 <h4>रु.${product.price}</h4>
                 <div class="action-area" id="action-area-${product.id}">
                     <button 
-                        class="add-btn" 
-                        data-id="${product.id}"
-                        ${outOfStock ? "disabled" : ""}
-                    >
-                        ${outOfStock ? "Out of stock" : "Add to cart"}
-                    </button>
+    class="add-btn ${outOfStock ? "out-of-stock" : "available"}"
+    data-id="${product.id}"
+    ${outOfStock ? "disabled" : ""}
+>
+    ${outOfStock ? "Out of stock" : "Add to cart"}
+</button>
                 </div>
             </div>
         `;
