@@ -1,13 +1,11 @@
 document.addEventListener("productsLoaded", function () {
-  //see who is logged in
   const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
-  const cartKey = loggedInUser ? `cart_${loggedInUser.email}` : "cart_guest";
+  const userEmail = loggedInUser ? loggedInUser.email : "guest";
 
-  //load saved cart from local storage of start empty
-  let cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+  let cart = getUserCart(userEmail);
 
   function saveCart() {
-    localStorage.setItem(cartKey, JSON.stringify(cart));
+    saveUserCart(userEmail, cart);
   }
 
   function addToCart(productId) {
@@ -111,7 +109,7 @@ document.addEventListener("productsLoaded", function () {
             </div>
             <div class="quantity-control">
             <button onclick="updateQuantity(${item.id}, -1)">-</button>
-            <span>${item.quantity}</span>
+            <span class="qty-value">${item.quantity}</span>
             <button onclick="updateQuantity(${item.id}, 1)">+</button>
             </div>
             <div class="remove">
@@ -163,7 +161,7 @@ document.addEventListener("productsLoaded", function () {
         alert("Your cart is empty");
         return;
       }
-      alert("Proceeding to checkout");
+      // alert("Proceeding to checkout");
     });
 
   cart.forEach((item) => markAsAdded(item.id));
