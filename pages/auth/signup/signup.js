@@ -87,6 +87,7 @@ form.addEventListener("submit", function (event) {
   }
 
   const user = { name, email, phone, address, password };
+  
   registeredUsers.push(user);
   localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
 
