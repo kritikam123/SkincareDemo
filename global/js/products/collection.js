@@ -25,7 +25,7 @@ document.addEventListener("productsLoaded", function () {
       productsContainer.innerHTML += `
              <div class="card" data-id="${product.id}">
                     <img src="${product.image}" alt="${product.name}">
-                    <h3>${product.name}</h3>
+                    <h3 class="product-info-details" data-id="${product.id}">${product.name}</h3>
                     <p>${product.description}</p>
                     <h4>रु.${product.price}</h4>
 
