@@ -746,6 +746,94 @@
       "frequency": "AM, daily, and reapply through the day."
     },
     "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
+  },
+  {
+    "id": 34,
+    "name": "Maleic Bond Repair Complex 5% Hair Mask",
+    "description": "Dull, Frizzy, Weak & Damaged Hair",
+    "price": 630,
+    "category": "New Launches",
+    "concern": "Dandruff",
+    "inStock": true,
+    "image": "/assets/products/product13.png",
+    "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
+    "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",
+    "idealFor": {
+      "skinType": "Damaged, Dull or Dandruff-Prone Scalp/Hair",
+      "concerns": "Damage, Frizz & Dandruff",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously on clean, damp hair from roots to tips, leave on for 10-15 minutes, then rinse thoroughly.",
+      "frequency": "1-2 times a week."
+    },
+    "ingredients": "Water/Aqua, Maleic Acid, Cetrimonium Chloride, Shea Butter, Panthenol, Zinc Pyrithione, Argan Oil, Glycerin, Phenoxyethanol."
+  },
+  {
+    "id": 35,
+    "name": "Vitamin K + Retinal Eye Cream",
+    "description": "Dark Circles, Fine Lines & Eye Puffiness",
+    "price": 464,
+    "category": "New Launches",
+    "concern": "Aging",
+    "inStock": true,
+    "image": "/assets/products/product9.png",
+    "subtitle": "Brightens Dark Circles & Smoothens Fine Lines",
+    "fullDescription": "A targeted eye cream combining Vitamin K and gentle Retinal to visibly reduce the appearance of dark circles, fine lines and puffiness around the delicate eye area.",
+    "idealFor": {
+      "skinType": "All Skin Types",
+      "concerns": "Dark Circles, Fine Lines & Puffiness",
+      "suitableFor": "18+ years of age"
+    },
+    "howToUse": {
+      "steps": "Dab a small amount gently around the orbital bone using your ring finger, avoiding direct contact with the eyes.",
+      "frequency": "PM, every day."
+    },
+    "ingredients": "Water/Aqua, Vitamin K, Retinal, Caffeine, Glycerin, Squalane, Sodium Hyaluronate, Panthenol, Bisabolol, Phenoxyethanol."
+  },
+  {
+    "id": 36,
+    "name": "Salicylic Acid + LHA Cleanser",
+    "description": "Acne, Breakouts & Oiiness",
+    "price": 270,
+    "category": "New Launches",
+    "concern": "Acne",
+    "inStock": true,
+    "image": "/assets/products/product1.jpg",
+    "subtitle": "Reduces Sebum & Prevents Breakout Without Drying Skin",
+    "fullDescription": "A daily, gentle exfoliating, acne-fighting face cleanser. It combines BHA + LHA (Salicylic Acid + Capryloyl Salicylic Acid) in 2% concentration, providing deep cleansing, pore decongestion & sebum reduction without drying out the skin.",
+    "idealFor": {
+      "skinType": "Oily/Combination, Acne-Prone",
+      "concerns": "Acne, Breakouts & Oiliness",
+      "suitableFor": "15+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply on wet face. Pour a small amount into wet hands, rub into a light lather, and massage into face. Rinse thoroughly.",
+      "frequency": "AM & PM, every day."
+    },
+    "ingredients": "Water/Aqua, Glycerin, Propanediol, Cocamidopropyl Betaine, Sodium Lauroyl Methyl Isethionate, Decyl Glucoside, Salicylic Acid, Xylitylglucoside, Panthenol, Betaine, Sodium PCA, Avena Sativa (Oat) Kernel Extract, Zinc PCA, Capryloyl Salicylic Acid, Allantoin, Citric Acid."
+  },
+  {
+    "id": 37,
+    "name": "SPF 50 Sunscreen",
+    "description": "Sun protection, UV exposure / damage",
+    "price": 360,
+    "category": "New Launches",
+    "concern": "Sun Protection",
+    "inStock": true,
+    "image": "/assets/products/product2.png",
+    "subtitle": "Broad Spectrum Protection Without the White Cast",
+    "fullDescription": "A lightweight, non-greasy sunscreen with SPF 50 PA++++ that shields skin from UVA/UVB rays and blue light damage, absorbing quickly with a matte, no-white-cast finish suitable for daily wear.",
+    "idealFor": {
+      "skinType": "All Skin Types, including Oily & Sensitive",
+      "concerns": "Sun Damage, Tanning & Photoaging",
+      "suitableFor": "12+ years of age"
+    },
+    "howToUse": {
+      "steps": "Apply generously as the last step of your morning routine, covering face and exposed neck evenly. Reapply every 3-4 hours if outdoors.",
+      "frequency": "AM, daily, and reapply through the day."
+    },
+    "ingredients": "Water/Aqua, Ethylhexyl Triazone, Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine, Butyl Methoxydibenzoylmethane, Niacinamide, Glycerin, Dimethicone, Allantoin, Tocopheryl Acetate, Phenoxyethanol."
   }
 
 ]
