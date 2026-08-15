@@ -1,19 +1,37 @@
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.getElementById("loginForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-    const email = document.getElementById('loginEmail').value.trim().toLowerCase();
-    const password = document.getElementById('loginPassword').value.trim();
+  const emailInput = document.getElementById("loginEmail");
+  const passwordInput = document.getElementById("loginPassword");
 
-    const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+  const email = emailInput.value.trim().toLowerCase();
+  const password = passwordInput.value.trim();
 
-    const matchedUser = registeredUsers.find(
-        user => user.email.trim().toLowerCase() === email && user.password.trim() === password
-    );
+  const registeredUsers =
+    JSON.parse(localStorage.getItem("registeredUsers")) || [];
 
-    if (matchedUser) {
-        localStorage.setItem('loggedInUser', JSON.stringify(matchedUser));
-        window.location.href = "/pages/user/user.html";
-    } else {
-        alert("Invalid email or password");
-    }
+  const matchedUser = registeredUsers.find(
+    (user) =>
+      user.email.trim().toLowerCase() === email &&
+      user.password.trim() === password,
+  );
+
+  if (matchedUser) {
+    localStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
+    window.location.href = "/pages/user/user.html";
+  } else {
+    emailInput.classList.add("input-error");
+    passwordInput.classList.add("input-error");
+    document.getElementById("loginError").textContent = "Invalid email or password";
+  }
+});
+
+document.getElementById("loginEmail").addEventListener("input", function () {
+  this.classList.remove("input-error");
+  document.getElementById("loginError").textContent = "";
+});
+
+document.getElementById("loginPassword").addEventListener("input", function () {
+  this.classList.remove("input-error");
+  document.getElementById("loginError").textContent = "";
 });

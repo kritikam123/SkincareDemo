@@ -17,55 +17,61 @@ form.addEventListener("submit", function (event) {
   const passwordPattern =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
 
+  // clear all old error messages first
+  document.getElementById("nameError").textContent = "";
+  document.getElementById("emailError").textContent = "";
+  document.getElementById("phoneError").textContent = "";
+  document.getElementById("passwordError").textContent = "";
+  document.getElementById("confirmPasswordError").textContent = "";
+
   if (name === "") {
-    alert("Full name is required");
+    document.getElementById("nameError").textContent = "Full name is required";
     return;
   }
 
   if (!namePattern.test(name)) {
-    alert("Full name should contain only letters");
+    document.getElementById("nameError").textContent = "Full name should contain only letters";
     return;
   }
 
   if (email === "") {
-    alert("Email is required.");
+    document.getElementById("emailError").textContent = "Email is required.";
     return;
   }
 
   if (!emailPattern.test(email)) {
-    alert("Please enter a valid email address.");
+    document.getElementById("emailError").textContent = "Please enter a valid email address.";
     return;
   }
 
   if (phone === "") {
-    alert("Phone number is required.");
+    document.getElementById("phoneError").textContent = "Phone number is required.";
     return;
   }
 
   if (!phonePattern.test(phone)) {
-    alert("Phone number must be a valid Nepali number.");
+    document.getElementById("phoneError").textContent = "Phone number must be a valid Nepali number.";
     return;
   }
 
   if (password === "") {
-    alert("Password is required.");
+    document.getElementById("passwordError").textContent = "Password is required.";
     return;
   }
 
   if (!passwordPattern.test(password)) {
-    alert(
-      "Password must contain uppercase, lowercase, number, special character and be at least 8 characters long.",
-    );
+    document.getElementById("passwordError").textContent =
+      "Password must contain uppercase, lowercase, number, special character and be at least 8 characters long.";
     return;
   }
 
   if (confirmPassword === "") {
-    alert("Please confirm your password.");
+    document.getElementById("confirmPasswordError").textContent = "Please confirm your password.";
     return;
   }
 
   if (password !== confirmPassword) {
-    alert("Passwords do not match.");
+    document.getElementById("confirmPasswordError").textContent = "Passwords do not match.";
     return;
   }
 
@@ -74,20 +80,17 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  //get existing users array, or start empty
-  let registeredUsers =
-    JSON.parse(localStorage.getItem("registeredUsers")) || [];
+  let registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
 
-  //check if email already exists
-  const exmailExists = registeredUsers.some((user) => user.email === email);
+  const emailExists = registeredUsers.some((user) => user.email === email);
 
-  if (exmailExists) {
-    alert("This email already has an account. Please log in instead.");
+  if (emailExists) {
+    document.getElementById("emailError").textContent = "This email already has an account. Please log in instead.";
     return;
   }
 
   const user = { name, email, phone, address, password };
-  
+
   registeredUsers.push(user);
   localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
 
