@@ -11,7 +11,6 @@
     left: 0;
     z-index: 1000;
     background: white;
-   
 }
 
 .logo{
@@ -31,9 +30,7 @@
     align-items: center;
     margin: 0;
     padding: 0;
-
 }
-
 
 .nav-links a{
     text-decoration:none;
@@ -48,10 +45,13 @@
 
 .nav-links a.active {
     font-weight: bold;
+    background-color: #fafafa;
 }
 
+
+
 .menu-toggle{
-    display:none;
+    display:none; /* revealed again below at 768px */
     font-size:28px;
     cursor:pointer;
 }
@@ -74,7 +74,7 @@
 }
 
 .icon::after{
-content: attr(data-username);
+    content: attr(data-username);
     position: absolute;
     top: calc(100% + 10px);
     left: 50%;
@@ -92,7 +92,6 @@ content: attr(data-username);
     transition: opacity 0.15s ease, transform 0.15s ease;
     pointer-events: none;
     z-index: 10;
-  
 }
 
 .icon:hover::after {
@@ -136,59 +135,72 @@ content: attr(data-username);
     justify-content: center;
 }
 
-@media(max-width:768px){
-
-.my-navbar{
-    padding:0 20px;
+@media (max-width: 1024px){
+    .my-navbar{
+        padding: 0 40px;
+    }
+    .nav-links{
+        gap: 22px;
+    }
 }
 
+@media (max-width: 768px){
 
-.menu-toggle{
-    display:block;
+    .my-navbar{
+        padding: 0 20px;
+        flex-wrap: wrap; /* required so nav-links/nav-right can drop to new rows */
+    }
+
+    .menu-toggle{
+        display: block; /* THIS is the line that was missing — hamburger was invisible without it */
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        order: 3;
+        padding: 30px 0;
+        background: white;
+        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+        position: static;
+    }
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-right{
+        display: none;
+        width: 100%;
+        order: 4;
+        justify-content: center;
+        gap: 30px;
+        padding-bottom: 20px;
+        background: white;
+        position: static;
+    }
+
+    .nav-right.active{
+        display: flex;
+    }
 }
 
-.nav-links{
-
-    position:absolute;
-
-    top:80px;
-    left:0;
-
-    width:100%;
-
-    background:white;
-
-    display:none;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:25px;
-
-    padding:30px 0;
-
-    box-shadow:0 5px 10px rgba(0,0,0,.1);
-}
-
-.nav-links.active{
-    display:flex;
-}
-.nav-right{
-    display:none;
-    position:absolute;
-    top:300px;   
-    left:0;
-    width:100%;
-    justify-content:center;
-    gap:30px;
-    background:white;
-    padding-bottom:20px;
-}
-
-.nav-right.active{
-    display: flex;
-}
-
-
+@media (max-width: 480px){
+    .my-navbar{
+        height: 65px;
+        padding: 0 15px;
+    }
+    .logo h2{
+        font-size: 20px;
+    }
+    .icon, .cart-icon{
+        font-size: 18px;
+    }
+    .nav-links{
+        gap: 20px;
+        padding: 25px 0;
+    }
 }

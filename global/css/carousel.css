@@ -14,7 +14,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    /* opacity: 0; */
+    opacity: 0;
     transition: 3ms ease-in-out;
     z-index: 1;
 }
@@ -33,15 +33,14 @@
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 30%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
+    margin: 30px;
+    color: rgb(24, 23, 23);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
     transition:  0.6s ease;
-    border-radius: 0 3px 3px 0;
+    /* border-radius: 25%; */
     user-select: none;
     text-decoration: none;
     z-index: 2;
@@ -49,38 +48,35 @@
 
 .next{
     right: 0;
-    border-radius: 3px 0 0 3px;
+    /* border-radius: 3px 0 0 3px;
+    border-radius: 25%; */
 }
 
-.prev:hover, .next:hover{
-    background-color: rgba(0, 0, 0, 0.8);
-}
 
 .dots-container {
-    position: absolute;
-    bottom: 15px;
-    height: 2px;
-    width: 60px;
-    background-color: #bbb;
-    border-radius: 25%;
+    position: relative;
+    background-color: #f5f5f5;
     left: 0;
     right: 0;
     text-align: center;
     z-index: 2;
 }
 
-/* .dot{
-    cursor: pointer;
-    
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 25%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-} */
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  padding: 1px;
+  margin: 0 2px;
+  margin-top: 18px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
 
-.active, .dot:hover{
-    background-color: #717171;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
 .fade {
@@ -91,4 +87,23 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+@media (max-width: 768px){
+    .carousel-item img{
+        aspect-ratio: 4 / 3;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon{
+        padding: 14px; 
+    }
+}
+
+@media (max-width: 480px){
+    .carousel-item img{
+        aspect-ratio: 1 / 1;
+    }
+    .carousel-indicators li{
+        width: 24px; 
+    }
 }
