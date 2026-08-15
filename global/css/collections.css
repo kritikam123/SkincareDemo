@@ -113,7 +113,7 @@ body {
     background: gray;
 }
 
-.add-btn.available {
+.add-btn:available {
     background-color: black;
     color: white;
     border: none;
@@ -121,8 +121,8 @@ body {
     cursor: pointer;
 }
 
-.add-btn.out-of-stock {
-    background-color: gray;
+.add-btn:disabled {
+    background-color: rgb(155, 152, 152);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -193,10 +193,6 @@ body {
     top: 100px;
     background: white;
     width: clamp(200px, 22vw, 280px);
-    /* scales with viewport instead of
-                                          a fixed 20%, with sensible
-                                          floor/ceiling so it never gets
-                                          too cramped or too wide */
     flex-shrink: 0;
     padding: 20px;
     margin: 20px 0;
@@ -512,12 +508,15 @@ body {
     background-color: black;
     color: white;
 }
+.prev-page:disabled,
+.next-page:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    background-color: #080808;
+    pointer-events: none;
+}
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 
-/* ---------- Large tablets / small laptops (<=992px) ---------- */
 @media (max-width: 1158px) {
 
     .products-section {

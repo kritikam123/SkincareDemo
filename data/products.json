@@ -754,7 +754,7 @@
     "price": 630,
     "category": "New Launches",
     "concern": "Dandruff",
-    "inStock": true,
+    "inStock": false,
     "image": "/assets/products/product13.png",
     "subtitle": "Repairs Damaged Hair & Controls Dandruff-Causing Flakes",
     "fullDescription": "An intensive weekly hair mask with Maleic Bond Repair Complex that rebuilds internal hair bonds, restores softness to dull and frizzy strands, and soothes a flaky, dandruff-prone scalp.",

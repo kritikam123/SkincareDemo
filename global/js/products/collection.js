@@ -3,8 +3,8 @@ document.addEventListener("productsLoaded", function () {
   const resultCountEl = document.getElementById("results-count");
   const noResultEl = document.getElementById("no-result");
   const sortSelect = document.getElementById("sort-select");
-  const paginationEl = document.getElementById("pagination"); 
-  
+  const paginationEl = document.getElementById("pagination");
+
   const baseProducts =
     typeof PAGE_CATEGORY !== "undefined"
       ? products.filter((product) => product.category === PAGE_CATEGORY)
@@ -16,7 +16,7 @@ document.addEventListener("productsLoaded", function () {
     if (list.length === 0) {
       noResultEl.style.display = "block";
       resultCountEl.textContent = "Showing 0 products";
-      if (paginationEl) paginationEl.innerHTML = ""; 
+      if (paginationEl) paginationEl.innerHTML = "";
       return;
     }
 
@@ -24,18 +24,24 @@ document.addEventListener("productsLoaded", function () {
     resultCountEl.textContent = `Showing ${list.length} product${list.length > 1 ? "s" : ""}`;
 
     list.forEach((product) => {
-      productsContainer.innerHTML += `
-             <div class="card" data-id="${product.id}">
-                    <img src="${product.image}" alt="${product.name}">
-                    <h3 class="product-info-details" data-id="${product.id}">${product.name}</h3>
-                    <p>${product.description}</p>
-                    <h4>रु.${product.price}</h4>
+      const inStock = product.inStock !== false;
 
-                    <div class="action-area" id="action-area-${product.id}">
-                        <button class="add-btn" data-id="${product.id}">Add to cart</button>
-                    </div>
+      productsContainer.innerHTML += `
+         <div class="card ${inStock ? "" : "out-of-stock"}" data-id="${product.id}">
+                <img src="${product.image}" alt="${product.name}">
+                <h3 class="product-info-details" data-id="${product.id}">${product.name}</h3>
+                <p>${product.description}</p>
+                <h4>रु.${product.price}</h4>
+
+                <div class="action-area" id="action-area-${product.id}">
+                    ${
+                      inStock
+                        ? `<button class="add-btn" data-id="${product.id}">Add to cart</button>`
+                        : `<button class="add-btn" data-id="${product.id}" disabled>Out of stock</button>`
+                    }
                 </div>
-            `;
+            </div>
+        `;
     });
 
     if (typeof cart !== "undefined") {
@@ -169,5 +175,5 @@ document.addEventListener("productsLoaded", function () {
     }
   });
 
-  renderProducts(baseProducts); 
+  renderProducts(baseProducts);
 });
