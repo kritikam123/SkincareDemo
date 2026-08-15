@@ -9,9 +9,10 @@
      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="/global/css/collections.css">
-    <link rel="stylesheet" href="/global/css/products.css">
+    <!-- <link rel="stylesheet" href="/global/css/products.css"> -->
     <link rel="stylesheet" href="/global/css/navbar.css">
     <link rel="stylesheet" href="/global/css/cart.css">
+    <link rel="stylesheet" href="/global/css/footer.css">
 
 </head>
 
@@ -113,6 +114,63 @@
     </div>
     <div class="pagination" id="pagination"></div>
  </div>
+</div>
+
+<footer class="footer">
+
+    <div class="footer-container">
+       
+        <div class="footer-section">
+            <h2>Minimalist</h2>
+            <p>
+                Clean, transparent skincare powered by science.
+                Honest ingredients. Visible results.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>ON OUR SITE</h3>
+
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Support</a>
+            
+        </div>
+
+        <div class="footer-section">
+            <h3>RESOURCES</h3>
+
+            <a href="#">Career</a>
+            <a href="#">Blog</a>
+            <a href="#">Legal</a>
+            
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>CONTACT</h3>
+
+            <p>support@minimalistFom</p>
+            <p>+977 9818768245</p>
+            <p>Sanepa, Lalitpur</p>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Minimalist. All Rights Reserved.
+    </p>
+
+</footer>
 
 <div class="cart-overlay" id="cart-overlay"></div>
 <aside class="cart-drawer" id="cart-drawer">
@@ -123,16 +181,19 @@
     <ul class="cart-items" id="cart-items"></ul>
     <div class="cart-footer">
         <p id="cart-total">Total: रु.0</p>
-        <button class="checkout-btn">Checkout</button>
+        <button class="checkout-btn" onclick="window.location.href='/pages/checkout/checkout.html'">Checkout</button>
     </div>
 </aside>
 
 <script src="/global/js/products/products-loader.js"></script>
+<script src="/global/js/cart/cartUtils.js"></script>
 <script src="/global/js/products/pagination.js"></script>
 <script src="/global/js/products/filters.js"></script>
 <script src="/global/js/nav/profileIcon.js"></script>
+
 <script src="/pages/user/best-sellers/best-sellers.js"></script>
 <script src="/global/js/nav/navbar.js"></script>
 <script src="/global/js/cart/cart.js"></script>
+<script src="/global/js/products/collection.js"></script>
 </body>
 </html>
