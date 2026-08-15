@@ -1,4 +1,6 @@
 document.addEventListener("productsLoaded", function () {
+  console.log("hello world best-seller.js");
+  debugger;
   const container = document.getElementById("products-container");
   const bestSellers = products.filter(
     (product) => product.category === "Best Sellers",
