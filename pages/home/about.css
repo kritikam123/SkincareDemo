@@ -7,14 +7,13 @@
 
 .about{
     width: 100%;
-    /* max-width: 118.75em; 1900px */
-    padding: 4.375em 5.625em; /* 70px 90px */
+    padding: 4.375em 5.625em; 
 }
 
 .about-title{
     text-align: center;
-    font-size: 2.375rem; /* 38px */
-    margin-bottom: 3.125em; /* 50px */
+    font-size: 2.375rem; 
+    margin-bottom: 3.125em; 
 }
 
 .about-container {
@@ -28,29 +27,29 @@
 
 .about-image{
     flex: 1;
-    min-width: 18.75em; /* 300px */
+    min-width: 18.75em; 
 }
 
 .about-image img{
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 15px; /* kept px — decorative curve */
-    box-shadow: 0 15px 35px rgba(0,0,0,.12); /* kept px — shadow offsets */
+    border-radius: 15px; 
+    box-shadow: 0 15px 35px rgba(0,0,0,.12); 
 }
 
 .about-text{
     flex:1;
-    min-width: 18.75em; /* 300px */
+    min-width: 18.75em; 
 }
 
 .about-text h2{
-    font-size: 2rem; /* 32px */
-    margin-bottom: 1.25em; /* 20px */
+    font-size: 2rem; 
+    margin-bottom: 1.25em; 
 }
 
 .about-text p{
-    font-size: 1.0625rem; /* 17px */
+    font-size: 1.0625rem; 
     line-height: 1.8;
     justify-content: left;
 }
@@ -64,12 +63,12 @@
 }
 
 .card-box{
-    flex: 1 1 18.75em; /* was fixed 380px — now flexes with a 300px floor so it can't overflow at any width */
-    max-width: 23.75em; /* 380px — caps growth on very wide screens */
-    padding: 1.875em; /* 30px */
-    border-radius: 12px; /* kept px — decorative curve */
+    flex: 1 1 18.75em;
+    max-width: 23.75em; 
+    padding: 1.875em; 
+    border-radius: 12px; 
     text-align: left;
-    box-shadow: 0 5px 15px rgba(0,0,0,.1); /* kept px — shadow offsets */
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
     transition: 0.3s;
 }
 
@@ -78,165 +77,159 @@
 }
 
 .card-box h2{
-    margin-bottom: 0.9375em; /* 15px */
+    margin-bottom: 0.9375em; 
 }
 
 .card-box p{
     line-height: 1.7;
 }
 
-/* ---------- Large laptop (<=1200px) ---------- */
-@media (max-width: 1200px){
+@media (max-width: 1450px){
     .about{
-        padding: 3.75em 3.75em; /* 60px 60px */
+        padding: 3.75em 3.75em; 
     }
-    /* matched to .about-cards gap below */
+    
     .about-container{
-        gap: 2em; /* 32px */
+        gap: 2em; 
     }
     .about-cards{
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* force 2-up */
-        gap: 2em; /* 32px — same as .about-container above */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2em; 
     }
     .card-box{
         width: 100%;
-        max-width: none; /* let the grid track control width, not the old flex cap */
+        max-width: none; 
     }
 }
 
-/* ---------- Small laptop / large tablet (<=1024px) ---------- */
 @media (max-width: 1024px){
     .about{
-        padding: 3.75em 2.5em; /* 60px 40px */
+        padding: 3.75em 2.5em; 
     }
     .about-image, .about-text{
-        min-width: 16.25em; /* 260px */
+        min-width: 16.25em; 
     }
-    /* matched to .about-cards gap below */
+    
     .about-container{
-        gap: 2.5em; /* 40px */
+        gap: 2.5em; 
     }
     .about-cards{
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* force 2-up */
-        gap: 2.5em; /* 40px — same as .about-container above */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5em; 
     }
 }
 
-/* ---------- Tablet (<=820px) ---------- */
 @media (max-width: 820px){
     .about{
-        padding: 3.5em 2em; /* 56px 32px */
+        padding: 3.5em 2em; 
     }
     .about-title{
-        font-size: 2rem; /* 32px */
-        margin-bottom: 2.25em; /* 36px */
+        font-size: 2rem; 
+        margin-bottom: 2.25em; 
     }
-    /* matched to .about-cards gap below */
+    
     .about-container{
-        gap: 1.75em; /* 28px */
+        gap: 1.75em; 
     }
     .about-cards{
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* force 2-up */
-        gap: 1.75em; /* 28px — same as .about-container above */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75em; 
     }
 }
 
-/* ---------- Small tablets / large phones (<=768px) ---------- */
 @media (max-width: 768px){
     .about{
-        padding: 3.75em 1.875em; /* 60px 30px */
+        padding: 3.75em 1.875em; 
     }
     .about-container{
         flex-direction: column;
         text-align: center;
-        gap: 1.5em; /* 24px — matched to .about-cards gap below */
+        gap: 1.5em; 
     }
     .about-cards{
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* still 2-up here */
-        gap: 1.5em; /* 24px — same as .about-container above */
-        margin-top: 3.125em; /* 50px */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 1.5em; 
+        margin-top: 3.125em; 
     }
     .about-title{
-        font-size: 1.875rem; /* 30px */
-        margin-bottom: 2.1875em; /* 35px */
+        font-size: 1.875rem; 
+        margin-bottom: 2.1875em; 
     }
     .about-text h2{
-        font-size: 1.625rem; /* 26px */
+        font-size: 1.625rem; 
     }
     .about-text p{
-        font-size: 1rem; /* 16px */
+        font-size: 1rem; 
         justify-content: left;
     }
 }
 
-/* ---------- Medium phones (<=600px) ---------- */
 @media (max-width: 600px){
     .about{
-        padding: 3.125em 1.5em; /* 50px 24px */
+        padding: 3.125em 1.5em;
     }
     .about-title{
-        font-size: 1.625rem; /* 26px */
+        font-size: 1.625rem; 
     }
     .about-text h2{
-        font-size: 1.375rem; /* 22px */
+        font-size: 1.375rem; 
     }
     .about-text p{
-        font-size: 0.9887rem; /* 16px */
+        font-size: 0.9887rem; 
         justify-content: left;
     }
-    /* below this point cards go back to a single stacked column */
+   
     .about-cards{
         grid-template-columns: 1fr;
     }
     .card-box{
         width: 100%;
-        max-width: 25em; /* 400px — comfortable stacked card width */
+        max-width: 25em; 
     }
 }
 
-/* ---------- Phones (<=480px) ---------- */
+
 @media (max-width: 480px){
     .about{
-        padding: 3.125em 1.25em; /* 50px 20px */
+        padding: 3.125em 1.25em; 
     }
     .about-title{
-        font-size: 1.5rem; /* 24px */
-        margin-bottom: 1.5625em; /* 25px */
+        font-size: 1.5rem; 
+        margin-bottom: 1.5625em; 
     }
     .about-image, .about-text{
-        min-width: unset; /* removes the 300px floor that could force overflow under 375px */
+        min-width: unset; 
         width: 100%;
     }
     .about-text h2{
-        font-size: 1.375rem; /* 22px */
+        font-size: 1.375rem;
     }
     .card-box{
         width: 100%;
-        max-width: 20em; /* 320px */
-        padding: 1.25em; /* 20px */
+        max-width: 20em; 
+        padding: 1.25em;
     }
     .card-box h2{
-        font-size: 1.125rem; /* 18px */
+        font-size: 1.125rem;
     }
     .card-box p{
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem; 
         line-height: 1.6;
     }
 }
 
-/* ---------- Small phones (<=360px) ---------- */
 @media (max-width: 360px){
     .about{
-        padding: 2.5em 1em; /* 40px 16px */
+        padding: 2.5em 1em; 
     }
     .about-title{
-        font-size: 1.25rem; /* 20px */
+        font-size: 1.25rem; 
     }
     .about-text p{
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem; 
     }
 }
