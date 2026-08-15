@@ -50,7 +50,6 @@ for (let i = 0; i < questions.length; i++){
     `;
 }
 
-//open-close on click
 questionsContainer.addEventListener("click", function(e){
     const card = e.target.closest(".card1");
     if(!card) return;

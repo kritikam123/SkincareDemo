@@ -8,96 +8,145 @@
 .download_container{
     background: white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
-    padding: 70px 5%;
-}
-
-.down_text{
-    flex:1;
-    
+    padding: 4.375em 5%; /* 70px 5% — % kept as-is, it's already fluid */
 }
 
 .down_text h1{
-    font-size: 50px;
+    font-size: clamp(1.75rem, 5vw, 3.125rem); /* 28px, 5vw, 50px */
 }
 
 .down_text ul{
-    font-size: 18px;
+    font-size: 1.125rem; /* 18px */
 }
 
-.down_img{
-    flex: 1;
-    display: flex;
-    justify-content: center;
+.down_text, .down_img{
+    flex: 1 1 20em; /* 320px */
 }
 
 .down_img img{
     width: 100%;
-    max-width: 500px;
+    max-width: 31.25em; /* 500px */
     height: auto;
+    display: block;
 }
 
 .down_button {
-    display: flex ;
-    justify-content: flex-start; 
-    margin-top: 30px;            
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.875em; /* 30px */
 }
 
 .down_button button {
-    background: #222222;         
-    color: #ffffff;              
+    background: #222222;
+    color: #ffffff;
     font-family: "Poppins", sans-serif;
-    font-size: 15px;
+    font-size: 0.9375rem; /* 15px */
     font-weight: 500;
-    letter-spacing: 0.5px;
-    
-    padding: 12px 36px;
-    border: 2px solid #222222;
-    border-radius: 4px;          
+    letter-spacing: 0.5px; /* kept px — decorative tracking, not sizing */
+    padding: 0.75em 2.25em; /* 12px 36px */
+    border: 2px solid #222222; /* border stays px */
     cursor: pointer;
-    
     transition: all 0.3s ease-in-out;
-    
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); /* kept px — shadow offsets */
 }
 
 .down_button button:hover {
-    background: transparent;     
-    color: #222222;              
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); 
-    transform: translateY(-2px); 
+    background: transparent;
+    color: #222222;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
 }
 
 .down_button button:active {
-    transform: translateY(0);    
+    transform: translateY(0);
 }
 
-@media (max-width:768px){
-
+/* ---------- Small laptop / large tablet (<=1024px) ---------- */
+@media (max-width: 1024px){
     .download_container{
-        flex-direction:column;
-        text-align:center;
-        padding:50px 20px;
+        padding: 3.75em 4%; /* 60px 4% */
     }
-
-    .down_text{
-        width:100%;
+    .down_text, .down_img{
+        flex: 1 1 17.5em; /* 280px */
     }
+}
 
-    .down_text h1{
-        font-size:36px;
+/* ---------- Tablet (<=820px) ---------- */
+@media (max-width: 820px){
+    .download_container{
+        padding: 3.5em 3%; /* 56px 3% */
+        gap: 1.5em; /* 24px — extra breathing room as columns get tighter */
     }
-
     .down_text ul{
-        font-size:16px;
-        text-align:left;
-        display:inline-block;
+        font-size: 1.0625rem; /* 17px */
     }
+}
 
+/* ---------- Small tablets / large phones (<=768px) ---------- */
+@media (max-width: 768px){
+    .download_container{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 3.125em 1.25em; /* 50px 20px */
+    }
+    .down_text, .down_img{
+        flex-basis: auto; /* critical: without this, 320px applies to HEIGHT once axis flips to column */
+        width: 100%;
+    }
+    .down_text ul{
+        text-align: left;
+        display: inline-block;
+    }
     .down_button{
-        justify-content:center;
+        justify-content: center;
     }
+}
 
+/* ---------- Medium phones (<=600px) ---------- */
+@media (max-width: 600px){
+    .download_container{
+        padding: 2.75em 1.25em; /* 44px 20px */
+    }
+    .down_text ul{
+        font-size: 1rem; /* 16px */
+    }
+    .down_img img{
+        max-width: 21.875em; /* 350px */
+    }
+}
+
+/* ---------- Phones (<=480px) ---------- */
+@media (max-width: 480px){
+    .down_text h1{
+        font-size: 1.625rem; /* 26px */
+    }
+    .down_img img{
+        max-width: 20em; /* 320px */
+    }
+    .down_button button{
+        width: 100%;
+        padding: 0.75em 0; /* 12px 0 */
+    }
+}
+
+/* ---------- Small phones (<=360px) ---------- */
+@media (max-width: 360px){
+    .download_container{
+        padding: 2.25em 1em; /* 36px 16px */
+    }
+    .down_text h1{
+        font-size: 1.5rem; /* 24px */
+    }
+    .down_text ul{
+        font-size: 0.9375rem; /* 15px */
+    }
+    .down_img img{
+        max-width: 100%;
+    }
+    .down_button button{
+        font-size: 0.875rem; /* 14px */
+    }
 }
