@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/global/css/navbar.css">
+    <link rel="stylesheet" href="/pages/checkout/checkout.css">
+    <link rel="stylesheet" href="/global/css/footer.css">
+    <link rel="stylesheet" href="/global/css/cart.css">
+
+</head>
+<div>
+
+<nav class="my-navbar">
+    <div class="logo">
+        <a href="/pages/user/user.html">
+            <h2>Minimalist</h2>
+        </a>
+    </div>
+    <div class="nav-right">
+        <a href="/pages/user/profile/profile.html" class="log-icon">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a href="#" class="log-icon" id="logout-btn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </a>
+    </div>
+    <div class="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+</nav>
+
+<div class="checkout-container">
+
+  <div class="checkout-box">
+    <h2 class="section-title">Shipping Address</h2>
+
+    <form id="checkoutForm" novalidate>
+      <div class="form-grid">
+
+        <div class="field">
+          <label for="firstName">First Name<span>*</span></label>
+          <input type="text" id="firstName" name="firstName" placeholder="Shreya" required>
+          <span class="error-msg">Please enter your first name</span>
+        </div>
+
+        <div class="field">
+          <label for="lastName">Last Name<span>*</span></label>
+          <input type="text" id="lastName" name="lastName" placeholder="Rai" required>
+          <span class="error-msg">Please enter your last name</span>
+        </div>
+
+        <div class="field span-2">
+          <label for="email">Email<span>*</span></label>
+          <input type="email" id="email" name="email" placeholder="shreya@gmail.com" required>
+          <span class="error-msg">Please enter a valid email</span>
+        </div>
+
+        <div class="field span-2">
+          <label for="phone">Phone number<span>*</span></label>
+          <div class="phone-group">
+            <select id="countryCode" name="countryCode">
+              <option value="+977" selected>NPL +977</option>
+              <option value="+1">USA +1</option>
+              <option value="+44">UK +44</option>
+              <option value="+977">NPL +977</option>
+              <option value="+61">AUS +61</option>
+            </select>
+            <input type="tel" id="phone" name="phone" placeholder="9815784898" required>
+          </div>
+          <span class="error-msg">Please enter a valid phone number</span>
+        </div>
+
+        <div class="field">
+          <label for="city">City<span>*</span></label>
+          <input type="text" id="city" name="city" placeholder="Kathmandu" required>
+          <span class="error-msg">Please enter your city</span>
+        </div>
+
+        <div class="field">
+          <label for="state">State<span>*</span></label>
+          <input type="text" id="state" name="state" placeholder="Bagmati" required>
+          <span class="error-msg">Please enter your state</span>
+        </div>
+
+        <div class="field">
+          <label for="zip">Zip Code<span>*</span></label>
+          <input type="text" id="zip" name="zip" placeholder="55784" required>
+          <span class="error-msg">Please enter a valid zip code</span>
+        </div>
+
+        <div class="field span-2">
+          <label for="description">Description<span>*</span></label>
+          <textarea id="description" name="description" placeholder="Enter a description... (e.g. landmark, delivery instructions)" required></textarea>
+          <span class="error-msg">Please add a short description</span>
+        </div>
+
+      </div>
+
+      <h2 class="section-title method-title">Payment Method</h2>
+
+      <div class="payment-methods">
+        <label class="method-card" data-price="0">
+          <input type="radio" name="shippingMethod" value="cod" checked>
+          <span class="radio-dot"></span>
+          <span class="method-info">
+            <span class="method-name">Cash on Delivery</span>
+        
+          </span>
+          
+        </label>
+
+        <label class="method-card" data-price="0">
+          <input type="radio" name="shippingMethod" value="express">
+          <span class="radio-dot"></span>
+          <span class="method-info">
+            <span class="method-name">FonePay</span>
+            
+          </span>
+          
+        </label>
+      </div>
+
+      <button type="submit" class="mobile-continue-btn">Continue to Payment</button>
+    </form>
+  </div>
+  <aside class="cart-summary">
+    <div class="cart-drawer-header">
+      <h3>Your Cart</h3>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+
+    <div class="cart-footer">
+      <div class="summary-line">
+        <span>Subtotal</span>
+        <span id="subtotal">$0.00</span>
+      </div>
+      <div class="summary-line">
+        <span>Delivery</span>
+        <span id="shippingCost">$0.00</span>
+      </div>
+     
+      <div class="summary-line total-line">
+        <span>Total</span>
+        <span id="totalCost">$0.00</span>
+      </div>
+      <button class="checkout-btn" id="continueBtn">Place Order</button>
+    </div>
+  </aside>
+</div>
+
+
+  <footer class="footer">
+
+    <div class="footer-container">
+       
+        <div class="footer-section">
+            <h2>Minimalist</h2>
+            <p>
+                Clean, transparent skincare powered by science.
+                Honest ingredients. Visible results.
+            </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>ON OUR SITE</h3>
+
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Support</a>
+            
+        </div>
+
+        <div class="footer-section">
+            <h3>RESOURCES</h3>
+
+            <a href="#">Career</a>
+            <a href="#">Blog</a>
+            <a href="#">Legal</a>
+            
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>CONTACT</h3>
+
+            <p>support@minimalistFom</p>
+            <p>+977 9818768245</p>
+            <p>Sanepa, Lalitpur</p>
+
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Minimalist. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="/global/js/nav/profileIcon.js"></script>
+<script src="/global/js/cart/cartUtils.js"></script>
+<script src="/pages/checkout/checkout.js"></script>
+<script src="/global/js/nav/navbar.js"></script>
+<script src="/global/js/auth/logout.js"></script>
+</body>
+</html>
