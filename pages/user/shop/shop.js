@@ -1,21 +1,21 @@
 const shopCategories = [
   {
     id: 1,
-    category: "Bath & Body",
-    link: "/pages/user/skincare/skin-care.html",
+    category: "Babycare",
+    link: "/pages/user/babycare/babycare.html",
     image: "/assets/products/product0.jpg",
   },
 
   {
     id: 2,
-    category: "Skin",
+    category: "Skincare",
     link: "/pages/user/skincare/skin-care.html",
     image: "/assets/products/product1.jpg",
   },
 
   {
     id: 3,
-    category: "Hair",
+    category: "Haircare",
     link: "/pages/user/haircare/hair-care.html",
     image: "/assets/products/product2.png",
   },
