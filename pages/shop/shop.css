@@ -8,14 +8,16 @@ body{
 
 .collection-header{
   text-align: center;
-  padding: 40px 90px;
+  padding: 32px 90px;
+}
+.collection-header p {
+  color: #555;
+  font-size: 15px;
 }
 
 .collection-header h1{
-  font-size: clamp(24px, 3vw, 32px);
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  margin: 0;
+ font-size: 28px;
+ margin-bottom: 10px;
 }
 
 .collection-layout{
