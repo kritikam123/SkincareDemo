@@ -121,10 +121,13 @@ body {
 }
 
 #qty-value {
+  padding:0 8px;
   width: 36px;
+  height: 28px;
   text-align: center;
   font-weight: 600;
   font-size: 18px;
+  border:2px solid rgb(212, 209, 209);
 }
 
 .add-btn {
