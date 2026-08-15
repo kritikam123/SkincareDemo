@@ -1,45 +1,32 @@
-// Wait for products to actually be loaded (products-loader.js fetches them async)
 document.addEventListener("productsLoaded", function () {
+  const productsContainer = document.getElementById("products-container");
+  const resultCountEl = document.getElementById("results-count");
+  const noResultEl = document.getElementById("no-result");
+  const sortSelect = document.getElementById("sort-select");
 
-    const productsContainer = document.getElementById("products-container");
-    const resultCountEl = document.getElementById("results-count");
-    const noResultEl = document.getElementById("no-result");
-    const sortSelect = document.getElementById("sort-select");
+  const baseProducts =
+    typeof PAGE_CATEGORY !== "undefined"
+      ? products.filter((product) => product.category === PAGE_CATEGORY)
+      : products;
 
-    // If a page sets `const PAGE_CATEGORY = "Skin";` (etc.) in a <script> tag
-    // BEFORE this file loads, this page is scoped to that category only.
-    // Leave PAGE_CATEGORY undefined (or omit it) to show every product,
-    // as on the "All Products" page.
-    const baseProducts = (typeof PAGE_CATEGORY !== "undefined")
-        ? products.filter(product => product.category === PAGE_CATEGORY)
-        : products;
+  function renderProducts(list) {
+    productsContainer.innerHTML = "";
 
-    // product cards for a list of products
-    function renderProducts(list) {
-        productsContainer.innerHTML = "";
+    if (list.length === 0) {
+      noResultEl.style.display = "block";
+      resultCountEl.textContent = "Showing 0 products";
+      return;
+    }
 
-        if (list.length === 0) {
-            noResultEl.style.display = "block";
-            resultCountEl.textContent = "Showing 0 products";
-            return;
-        }
+    noResultEl.style.display = "none";
+    resultCountEl.textContent = `Showing ${list.length} product${list.length > 1 ? "s" : ""}`;
 
-        noResultEl.style.display = "none";
-        resultCountEl.textContent = `Showing ${list.length} product${list.length > 1 ? "s" : ""}`;
-
-        list.forEach(product => {
-            productsContainer.innerHTML += `
+    list.forEach((product) => {
+      productsContainer.innerHTML += `
              <div class="card" data-id="${product.id}">
                     <img src="${product.image}" alt="${product.name}">
                     <h3>${product.name}</h3>
                     <p>${product.description}</p>
-                    <div class="icons">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
                     <h4>रु.${product.price}</h4>
 
                     <div class="action-area" id="action-area-${product.id}">
@@ -47,81 +34,140 @@ document.addEventListener("productsLoaded", function () {
                     </div>
                 </div>
             `;
-        });
-
-        // If any of these products are already in the cart (from a previous visit),
-        // show "Added" right away instead of "Add to cart"
-        if (typeof cart !== "undefined") {
-            cart.forEach(item => {
-                if (typeof markAsAdded === "function") markAsAdded(item.id);
-            });
-        }
-    }
-
-    // read current filter/sort state and rerender
-    function applyFilterAndSort() {
-        const checkedCategories = Array.from(document.querySelectorAll(".filter-category:checked")).map(el => el.value);
-        const checkedConcerns = Array.from(document.querySelectorAll(".filter-concern:checked")).map(el => el.value);
-        const minPrice = parseFloat(document.getElementById("price-min").value) || 0;
-        const maxPrice = parseFloat(document.getElementById("price-max").value) || Infinity;
-
-        let filtered = baseProducts.filter(product => {
-            const matchesCategory = checkedCategories.length === 0 || checkedCategories.includes(product.category);
-            const matchesConcern = checkedConcerns.length === 0 || checkedConcerns.includes(product.concern);
-            const matchesPrice = product.price >= minPrice && product.price <= maxPrice;
-            return matchesCategory && matchesConcern && matchesPrice;
-        });
-
-        // Sorting
-        const sortValue = sortSelect.value;
-
-        if (sortValue === "price-low") {
-            filtered.sort((a, b) => a.price - b.price);
-        } else if (sortValue === "price-high") {
-            filtered.sort((a, b) => b.price - a.price);
-        } else if (sortValue === "name-az") {
-            filtered.sort((a, b) => a.name.localeCompare(b.name));
-        } else if (sortValue === "name-za") {
-            filtered.sort((a, b) => b.name.localeCompare(a.name));
-        }
-
-        renderProducts(filtered);
-    }
-
-    document.querySelectorAll(".filter-category, .filter-concern").forEach(checkbox => {
-        checkbox.addEventListener("change", applyFilterAndSort);
     });
 
-    document.getElementById("price-min").addEventListener("input", applyFilterAndSort);
-    document.getElementById("price-max").addEventListener("input", applyFilterAndSort);
-    sortSelect.addEventListener("change", applyFilterAndSort);
+    if (typeof cart !== "undefined") {
+      cart.forEach((item) => {
+        if (typeof markAsAdded === "function") markAsAdded(item.id);
+      });
+    }
+  }
 
-    document.getElementById("clear-filters").addEventListener("click", function () {
-        document.querySelectorAll(".filter-category, .filter-concern").forEach(cb => cb.checked = false);
-        document.getElementById("price-min").value = "";
-        document.getElementById("price-max").value = "";
-        sortSelect.value = "featured";
-        applyFilterAndSort();
+  function applyFilterAndSort() {
+    const checkedCategories = Array.from(
+      document.querySelectorAll(".filter-category:checked"),
+    ).map((el) => el.value);
+    const checkedConcerns = Array.from(
+      document.querySelectorAll(".filter-concern:checked"),
+    ).map((el) => el.value);
+    const minPrice =
+      parseFloat(document.getElementById("price-min").value) || 0;
+    const maxPrice =
+      parseFloat(document.getElementById("price-max").value) || Infinity;
+
+    let filtered = baseProducts.filter((product) => {
+      const matchesCategory =
+        checkedCategories.length === 0 ||
+        checkedCategories.includes(product.category);
+      const matchesConcern =
+        checkedConcerns.length === 0 ||
+        checkedConcerns.includes(product.concern);
+      const matchesPrice =
+        product.price >= minPrice && product.price <= maxPrice;
+      return matchesCategory && matchesConcern && matchesPrice;
     });
 
-    // mobile filter sidebar open/close
-    const filterSidebar = document.getElementById("filter-sidebar");
-    const openFilterBtn = document.getElementById("open-filter-sidebar");
+    const sortValue = sortSelect.value;
 
-    if (openFilterBtn) {
-        openFilterBtn.addEventListener("click", function () {
-            filterSidebar.classList.toggle("open");
-        });
+    if (sortValue === "price-low") {
+      filtered.sort((a, b) => a.price - b.price);
+    } else if (sortValue === "price-high") {
+      filtered.sort((a, b) => b.price - a.price);
+    } else if (sortValue === "name-az") {
+      filtered.sort((a, b) => a.name.localeCompare(b.name));
+    } else if (sortValue === "name-za") {
+      filtered.sort((a, b) => b.name.localeCompare(a.name));
     }
 
-    // listen for Add to cart clicks (delegated)
-    productsContainer.addEventListener("click", function (e) {
-        if (e.target.classList.contains("add-btn") && !e.target.disabled) {
-            const card = e.target.closest(".card");
-            const id = Number(card.dataset.id);
-            if (typeof addToCart === "function") addToCart(id);
-        }
+    renderProducts(filtered);
+  }
+
+  document
+    .querySelectorAll(".filter-category, .filter-concern")
+    .forEach((checkbox) => {
+      checkbox.addEventListener("change", applyFilterAndSort);
     });
 
-    renderProducts(baseProducts);
+  document
+    .getElementById("price-min")
+    .addEventListener("input", applyFilterAndSort);
+  document
+    .getElementById("price-max")
+    .addEventListener("input", applyFilterAndSort);
+  sortSelect.addEventListener("change", applyFilterAndSort);
+
+  document
+    .getElementById("clear-filters")
+    .addEventListener("click", function () {
+      document
+        .querySelectorAll(".filter-category, .filter-concern")
+        .forEach((cb) => (cb.checked = false));
+      document.getElementById("price-min").value = "";
+      document.getElementById("price-max").value = "";
+      sortSelect.value = "featured";
+      applyFilterAndSort();
+    });
+
+  // ---------- Mobile filter sidebar (off-canvas below 992px) ----------
+  const filterSidebar = document.getElementById("filter-sidebar");
+  const openFilterBtn = document.getElementById("open-filter-sidebar");
+  const filterOverlay = document.getElementById("filter-overlay");
+
+  function openFilterSidebar() {
+    filterSidebar.classList.add("open");
+    if (filterOverlay) filterOverlay.classList.add("active");
+    document.body.style.overflow = "hidden"; // stop background scroll while drawer is open
+  }
+
+  function closeFilterSidebar() {
+    filterSidebar.classList.remove("open");
+    if (filterOverlay) filterOverlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  if (openFilterBtn) {
+    openFilterBtn.addEventListener("click", function () {
+      if (filterSidebar.classList.contains("open")) {
+        closeFilterSidebar();
+      } else {
+        openFilterSidebar();
+      }
+    });
+  }
+
+  // tapping the dimmed overlay closes the drawer
+  if (filterOverlay) {
+    filterOverlay.addEventListener("click", closeFilterSidebar);
+  }
+
+  // fallback: tapping anywhere outside the sidebar (and outside the
+  // toggle button itself) closes it — works even if #filter-overlay
+  // isn't present in the markup
+  document.addEventListener("click", function (e) {
+    if (!filterSidebar.classList.contains("open")) return;
+
+    const clickedInsideSidebar = filterSidebar.contains(e.target);
+    const clickedToggleBtn = openFilterBtn && openFilterBtn.contains(e.target);
+
+    if (!clickedInsideSidebar && !clickedToggleBtn) {
+      closeFilterSidebar();
+    }
+  });
+
+  // resizing back past 992px (e.g. rotating a tablet) clears any stuck-open state
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 992) {
+      closeFilterSidebar();
+    }
+  });
+
+  productsContainer.addEventListener("click", function (e) {
+    if (e.target.classList.contains("add-btn") && !e.target.disabled) {
+      const card = e.target.closest(".card");
+      const id = Number(card.dataset.id);
+      if (typeof addToCart === "function") addToCart(id);
+    }
+  });
+
+  renderProducts(baseProducts);
 });
