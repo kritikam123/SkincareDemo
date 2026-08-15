@@ -3,7 +3,8 @@ document.addEventListener("productsLoaded", function () {
   const resultCountEl = document.getElementById("results-count");
   const noResultEl = document.getElementById("no-result");
   const sortSelect = document.getElementById("sort-select");
-
+  const paginationEl = document.getElementById("pagination"); 
+  
   const baseProducts =
     typeof PAGE_CATEGORY !== "undefined"
       ? products.filter((product) => product.category === PAGE_CATEGORY)
@@ -15,6 +16,7 @@ document.addEventListener("productsLoaded", function () {
     if (list.length === 0) {
       noResultEl.style.display = "block";
       resultCountEl.textContent = "Showing 0 products";
+      if (paginationEl) paginationEl.innerHTML = ""; 
       return;
     }
 
@@ -41,9 +43,15 @@ document.addEventListener("productsLoaded", function () {
         if (typeof markAsAdded === "function") markAsAdded(item.id);
       });
     }
+
+    if (paginationEl && typeof paginate === "function") {
+      paginate(productsContainer, paginationEl);
+    }
   }
 
   function applyFilterAndSort() {
+    currentPage = 1;
+
     const checkedCategories = Array.from(
       document.querySelectorAll(".filter-category:checked"),
     ).map((el) => el.value);
@@ -108,7 +116,6 @@ document.addEventListener("productsLoaded", function () {
       applyFilterAndSort();
     });
 
-  // ---------- Mobile filter sidebar (off-canvas below 992px) ----------
   const filterSidebar = document.getElementById("filter-sidebar");
   const openFilterBtn = document.getElementById("open-filter-sidebar");
   const filterOverlay = document.getElementById("filter-overlay");
@@ -116,7 +123,7 @@ document.addEventListener("productsLoaded", function () {
   function openFilterSidebar() {
     filterSidebar.classList.add("open");
     if (filterOverlay) filterOverlay.classList.add("active");
-    document.body.style.overflow = "hidden"; // stop background scroll while drawer is open
+    document.body.style.overflow = "hidden";
   }
 
   function closeFilterSidebar() {
@@ -135,26 +142,19 @@ document.addEventListener("productsLoaded", function () {
     });
   }
 
-  // tapping the dimmed overlay closes the drawer
   if (filterOverlay) {
     filterOverlay.addEventListener("click", closeFilterSidebar);
   }
 
-  // fallback: tapping anywhere outside the sidebar (and outside the
-  // toggle button itself) closes it — works even if #filter-overlay
-  // isn't present in the markup
   document.addEventListener("click", function (e) {
     if (!filterSidebar.classList.contains("open")) return;
-
     const clickedInsideSidebar = filterSidebar.contains(e.target);
     const clickedToggleBtn = openFilterBtn && openFilterBtn.contains(e.target);
-
     if (!clickedInsideSidebar && !clickedToggleBtn) {
       closeFilterSidebar();
     }
   });
 
-  // resizing back past 992px (e.g. rotating a tablet) clears any stuck-open state
   window.addEventListener("resize", function () {
     if (window.innerWidth > 992) {
       closeFilterSidebar();
@@ -169,5 +169,5 @@ document.addEventListener("productsLoaded", function () {
     }
   });
 
-  renderProducts(baseProducts);
+  renderProducts(baseProducts); 
 });
