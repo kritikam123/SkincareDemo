@@ -44,7 +44,7 @@ document.addEventListener("productsLoaded", function () {
   container.addEventListener("click", function (e) {
     if (e.target.classList.contains("product-info-details")) {
       const id = e.target.dataset.id;
-      window.location.href = `/pages/details/product-details.html?id=${id}`;
+      window.location.href = `/pages/user/details/product-details.html?id=${id}`;
     }
   });
 });
