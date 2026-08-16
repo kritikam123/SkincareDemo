@@ -161,7 +161,6 @@ document.addEventListener("productsLoaded", function () {
         alert("Your cart is empty");
         return;
       }
-      // alert("Proceeding to checkout");
     });
 
   cart.forEach((item) => markAsAdded(item.id));

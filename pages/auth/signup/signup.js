@@ -1,5 +1,18 @@
 const form = document.getElementById("signupForm");
 
+function showMessage(text, type) {
+  // type: "success" or "error"
+  var box = document.getElementById("message-box");
+
+  box.textContent = text;
+  box.className = "message-" + type;
+  box.style.display = "block";
+
+  setTimeout(function () {
+    box.style.display = "none";
+  }, 3000);
+}
+
 form.addEventListener("submit", function (event) {
   event.preventDefault();
 
@@ -115,7 +128,7 @@ form.addEventListener("submit", function (event) {
 
   // Terms validation
   if (!terms) {
-    alert("Please accept the Terms of Service and Privacy Policy.");
+    showMessage("Please accept the Terms of Service and Privacy Policy.", "error");
     return;
   }
 
@@ -153,13 +166,13 @@ form.addEventListener("submit", function (event) {
     JSON.stringify(registeredUsers)
   );
 
-  alert("Account created successfully!");
+  showMessage("Account created successfully!", "success");
 
   form.reset();
 
   setTimeout(() => {
     window.location.href = "/pages/auth/login/login.html";
-  }, 500);
+  }, 1200);
 });
 
 
