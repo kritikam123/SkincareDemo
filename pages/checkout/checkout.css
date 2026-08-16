@@ -353,10 +353,7 @@ body{
 }
 
 #message-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-     width: 100%;
+    width: 100%;
     padding: 12px;
     border: none;
     cursor: pointer;
@@ -365,11 +362,11 @@ body{
 
 .message-success {
   background-color: #1a3f23;
-  color: #121312;
+  color: white;
 }
 
 .message-error {
-  background-color: #75060f;                                                                       
+  background-color: #75060f;
   color: white;
   
 }
