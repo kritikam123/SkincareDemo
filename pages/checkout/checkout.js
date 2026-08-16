@@ -9,6 +9,23 @@ var cartItems = [];
 
 var userEmail = "";
 
+/* ---------------- Simple message box ---------------- */
+
+function showMessage(text, type) {
+  // type: "success" or "error"
+  var box = document.getElementById("message-box");
+
+  box.textContent = text;
+  box.className = "message-" + type;
+  box.style.display = "block";
+
+  setTimeout(function () {
+    box.style.display = "none";
+  }, 3000);
+}
+
+/* ------------------------------------------------------ */
+
 function getLoggedInUser() {
   var userText = localStorage.getItem("loggedInUser");
 
@@ -111,12 +128,12 @@ function isFormValid() {
 
 function placeOrder() {
   if (!isFormValid()) {
-    alert("Please fill in all required fields.");
+    showMessage("Please fill in all required fields.", "error");
     return;
   }
 
   if (cartItems.length === 0) {
-    alert("Your cart is empty.");
+    showMessage("Your cart is empty.", "error");
     return;
   }
 
@@ -154,7 +171,7 @@ function placeOrder() {
 
   saveUserCart(userEmail, []);
 
-  alert("Your order has been placed successfully!");
+  showMessage("Order placed!", "success");
 
   renderCart();
 }
