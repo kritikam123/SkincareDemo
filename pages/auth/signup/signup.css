@@ -21,7 +21,7 @@ body{
 }
 
 .signup_box{
-    width: 460px;             /* wider, more room for wrapped error text */
+    width: 460px;
     background-color: whitesmoke;
     padding: 40px;
     border-radius: 12px;
@@ -37,7 +37,7 @@ body{
 .form{
     display: flex;
     flex-direction: column;
-    gap: 14px;                /* tighter now that error text adds height per field */
+    gap: 14px;               
     font-size: 17px;
 }
 
@@ -97,7 +97,7 @@ body{
 }
 
 .extra-links{
-    margin-top: 24px;         /* normal spacing, no negative-margin hack */
+    margin-top: 24px;
     text-align: center;
 }
 

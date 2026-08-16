@@ -132,7 +132,6 @@ document.addEventListener("productsLoaded", function () {
     renderCartDrawer();
   }
 
-  // open-close
   const cartDrawer = document.getElementById("cart-drawer");
   const cartOverlay = document.getElementById("cart-overlay");
 
@@ -147,7 +146,7 @@ document.addEventListener("productsLoaded", function () {
   }
 
   document.getElementById("cart-icon").addEventListener("click", function (e) {
-    e.preventDefault(); // stop the a href from reloading
+    e.preventDefault(); 
     openCart();
   });
 

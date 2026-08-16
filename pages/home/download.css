@@ -11,24 +11,24 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 4.375em 5%; /* 70px 5% — % kept as-is, it's already fluid */
+    padding: 4.375em 5%;
 }
 
 .down_text h1{
-    font-size: clamp(1.75rem, 5vw, 3.125rem); /* 28px, 5vw, 50px */
+    font-size: clamp(1.75rem, 5vw, 3.125rem); 
 }
 
 .down_text ul{
-    font-size: 1.125rem; /* 18px */
+    font-size: 1.125rem;
 }
 
 .down_text, .down_img{
-    flex: 1 1 20em; /* 320px */
+    flex: 1 1 20em; 
 }
 
 .down_img img{
     width: 100%;
-    max-width: 31.25em; /* 500px */
+    max-width: 31.25em; 
     height: auto;
     display: block;
 }
@@ -36,21 +36,21 @@
 .down_button {
     display: flex;
     justify-content: flex-start;
-    margin-top: 1.875em; /* 30px */
+    margin-top: 1.875em;
 }
 
 .down_button button {
     background: #222222;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
-    font-size: 0.9375rem; /* 15px */
+    font-size: 0.9375rem; 
     font-weight: 500;
-    letter-spacing: 0.5px; /* kept px — decorative tracking, not sizing */
-    padding: 0.75em 2.25em; /* 12px 36px */
-    border: 2px solid #222222; /* border stays px */
+    letter-spacing: 0.5px; 
+    padding: 0.75em 2.25em; 
+    border: 2px solid #222222; 
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); /* kept px — shadow offsets */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04); 
 }
 
 .down_button button:hover {
@@ -64,36 +64,33 @@
     transform: translateY(0);
 }
 
-/* ---------- Small laptop / large tablet (<=1024px) ---------- */
 @media (max-width: 1024px){
     .download_container{
-        padding: 3.75em 4%; /* 60px 4% */
+        padding: 3.75em 4%;
     }
     .down_text, .down_img{
-        flex: 1 1 17.5em; /* 280px */
+        flex: 1 1 17.5em; 
     }
 }
 
-/* ---------- Tablet (<=820px) ---------- */
 @media (max-width: 820px){
     .download_container{
-        padding: 3.5em 3%; /* 56px 3% */
-        gap: 1.5em; /* 24px — extra breathing room as columns get tighter */
+        padding: 3.5em 3%;
+        gap: 1.5em; 
     }
     .down_text ul{
-        font-size: 1.0625rem; /* 17px */
+        font-size: 1.0625rem; 
     }
 }
 
-/* ---------- Small tablets / large phones (<=768px) ---------- */
 @media (max-width: 768px){
     .download_container{
         flex-direction: column-reverse;
         text-align: center;
-        padding: 3.125em 1.25em; /* 50px 20px */
+        padding: 3.125em 1.25em; 
     }
     .down_text, .down_img{
-        flex-basis: auto; /* critical: without this, 320px applies to HEIGHT once axis flips to column */
+        flex-basis: auto; 
         width: 100%;
     }
     .down_text ul{
@@ -105,48 +102,45 @@
     }
 }
 
-/* ---------- Medium phones (<=600px) ---------- */
 @media (max-width: 600px){
     .download_container{
-        padding: 2.75em 1.25em; /* 44px 20px */
+        padding: 2.75em 1.25em; 
     }
     .down_text ul{
-        font-size: 1rem; /* 16px */
+        font-size: 1rem; 
     }
     .down_img img{
-        max-width: 21.875em; /* 350px */
+        max-width: 21.875em; 
     }
 }
 
-/* ---------- Phones (<=480px) ---------- */
 @media (max-width: 480px){
     .down_text h1{
-        font-size: 1.625rem; /* 26px */
+        font-size: 1.625rem; 
     }
     .down_img img{
-        max-width: 20em; /* 320px */
+        max-width: 20em;
     }
     .down_button button{
         width: 100%;
-        padding: 0.75em 0; /* 12px 0 */
+        padding: 0.75em 0; 
     }
 }
 
-/* ---------- Small phones (<=360px) ---------- */
 @media (max-width: 360px){
     .download_container{
-        padding: 2.25em 1em; /* 36px 16px */
+        padding: 2.25em 1em; 
     }
     .down_text h1{
-        font-size: 1.5rem; /* 24px */
+        font-size: 1.5rem; 
     }
     .down_text ul{
-        font-size: 0.9375rem; /* 15px */
+        font-size: 0.9375rem; 
     }
     .down_img img{
         max-width: 100%;
     }
     .down_button button{
-        font-size: 0.875rem; /* 14px */
+        font-size: 0.875rem; 
     }
 }

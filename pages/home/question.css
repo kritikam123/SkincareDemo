@@ -35,13 +35,12 @@ text-align: center;
 }
 .card-body{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* was missing entirely — this is what actually controls column count */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     background: white;
     justify-content: center;
     gap: 20px;
     width: 100%;
-    max-width: 1000px; /* keeps 2-up cards from stretching too wide on large screens */
-    margin: 0 auto;
+    max-width: 1000px; 
 }
 
 .card1{
@@ -66,11 +65,10 @@ text-align: center;
         font-size: 30px;
     }
     .card-body{
-        grid-template-columns: 1fr; /* force single column on mobile */
+        grid-template-columns: 1fr; 
     }
     .card1{
         padding: 20px 22px;
-        /* remove flex: 1 1 100% — it did nothing in a grid context */
     }
 }
 
@@ -140,11 +138,10 @@ text-align: center;
         font-size: 30px;
     }
     .card-body{
-        grid-template-columns: 1fr; /* force single column on mobile */
+        grid-template-columns: 1fr; 
     }
     .card1{
         padding: 20px 22px;
-        /* remove flex: 1 1 100% — it did nothing in a grid context */
     }
 }
 

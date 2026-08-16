@@ -9,10 +9,7 @@ var cartItems = [];
 
 var userEmail = "";
 
-/* ---------------- Simple message box ---------------- */
-
 function showMessage(text, type) {
-  // type: "success" or "error"
   var box = document.getElementById("message-box");
 
   box.textContent = text;
@@ -23,8 +20,6 @@ function showMessage(text, type) {
     box.style.display = "none";
   }, 3000);
 }
-
-/* ------------------------------------------------------ */
 
 function getLoggedInUser() {
   var userText = localStorage.getItem("loggedInUser");

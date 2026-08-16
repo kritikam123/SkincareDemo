@@ -5,10 +5,6 @@
     font-family:"Poppins",sans-serif;
 }
 
-/* body{
-    background: #E5E9EA;
-} */
-
 .cart-icon {
     position: relative;
     cursor: pointer;
@@ -105,7 +101,6 @@
     display: flex;
     position: relative;
     align-items: center;
-    /* gap: 12px; */
     padding: 18px 0;
     border-bottom: 1px solid #e0e0e0;
 }

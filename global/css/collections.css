@@ -12,7 +12,6 @@ body {
 .product-main {
     flex: 1;
     min-width: 0;
-    /* lets the grid inside shrink below its content size instead of overflowing */
 }
 
 .products-section {
@@ -27,8 +26,6 @@ body {
     text-align: center;
 }
 
-/* single source of truth for the product grid — was previously
-   declared twice with conflicting gap values (20px vs 30px) */
 .products {
     width: 100%;
     display: grid;
@@ -308,8 +305,6 @@ body {
     cursor: pointer;
 }
 
-/* cart drawer */
-/* ---------- Cart icon ---------- */
 .cart-icon {
     position: relative;
     cursor: pointer;
@@ -339,7 +334,6 @@ body {
     opacity: 0.8;
 }
 
-/* ---------- Dark background behind drawer ---------- */
 .cart-overlay {
     position: fixed;
     inset: 0;
@@ -355,7 +349,6 @@ body {
     pointer-events: auto;
 }
 
-/* ---------- Sliding drawer ---------- */
 .cart-drawer {
     position: fixed;
     top: 0;
@@ -368,7 +361,6 @@ body {
     display: flex;
     flex-direction: column;
     transform: translateX(100%);
-    /* off-screen by its own width, not a fixed px offset */
     transition: transform 0.35s ease-in-out;
     z-index: 999;
 }
@@ -393,7 +385,6 @@ body {
     line-height: 1;
 }
 
-/* ---------- Cart items list ---------- */
 .cart-items {
     list-style: none;
     flex: 1;
@@ -437,7 +428,6 @@ body {
     font-size: 14px;
 }
 
-/* ---------- Quantity control (used both in card and drawer) ---------- */
 .quantity-control {
     display: flex;
     align-items: center;
@@ -460,7 +450,6 @@ body {
     background: gray;
 }
 
-/* ---------- Cart footer ---------- */
 .cart-footer {
     padding: 20px;
     border-top: 1px solid #ddd;
@@ -540,7 +529,6 @@ body {
         gap: 16px;
     }
 
-    /* off-canvas drawer below 992px — hidden until .open is toggled by JS */
     .filter-sidebar {
         position: fixed;
         top: 0;
@@ -584,7 +572,6 @@ body {
         justify-content: space-between;
     }
 
-    /* 3 cards per row */
     .products {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
@@ -599,21 +586,18 @@ body {
     }
 }
 
-/* ---------- Small tablets / large phones (<=768px) ---------- */
 @media (max-width: 768px) {
 
     .products-section {
         padding: 40px 24px;
     }
 
-    /* 2 cards per row */
     .products {
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
 }
 
-/* ---------- Phones (<=480px) ---------- */
 @media (max-width: 480px) {
 
     .products-section {
@@ -647,7 +631,6 @@ body {
         flex: 1;
     }
 
-    /* 1 card per row */
     .products {
         grid-template-columns: repeat(1, 1fr);
         gap: 12px;

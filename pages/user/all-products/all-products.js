@@ -24,7 +24,7 @@ document.addEventListener("productsLoaded", function () {
   }
 
   initProductFilters({
-    baseProducts: products, // the full array from your JSON, no filtering
+    baseProducts: products,
     container: container,
     renderCard: renderCard,
   });

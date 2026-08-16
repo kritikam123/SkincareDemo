@@ -42,5 +42,5 @@ function showSlides(n) {
 function startAutoSlide() {
     slideTimer = setTimeout(function() {
         plusSlides(1);
-    }, 2000); // change slide every 2 seconds
+    }, 2000); 
 }

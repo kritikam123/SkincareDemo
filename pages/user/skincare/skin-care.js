@@ -26,7 +26,6 @@ document.addEventListener("productsLoaded", function () {
         `;
   }
 
-  // Hands control over to the shared filter/sort logic in filters.js
   initProductFilters({
     baseProducts: skinProducts,
     container: container,

@@ -51,7 +51,7 @@
 
 
 .menu-toggle{
-    display:none; /* revealed again below at 768px */
+    display:none; 
     font-size:28px;
     cursor:pointer;
 }
@@ -148,11 +148,11 @@
 
     .my-navbar{
         padding: 0 20px;
-        flex-wrap: wrap; /* required so nav-links/nav-right can drop to new rows */
+        flex-wrap: wrap; 
     }
 
     .menu-toggle{
-        display: block; /* THIS is the line that was missing — hamburger was invisible without it */
+        display: block; 
     }
 
     .nav-links{

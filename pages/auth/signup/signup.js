@@ -1,7 +1,6 @@
 const form = document.getElementById("signupForm");
 
 function showMessage(text, type) {
-  // type: "success" or "error"
   var box = document.getElementById("message-box");
 
   box.textContent = text;
@@ -37,24 +36,20 @@ form.addEventListener("submit", function (event) {
   const passwordPattern =
     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}$/;
 
-  // Clear old error messages
   document.getElementById("nameError").textContent = "";
   document.getElementById("emailError").textContent = "";
   document.getElementById("phoneError").textContent = "";
   document.getElementById("passwordError").textContent = "";
   document.getElementById("confirmPasswordError").textContent = "";
 
-  // Remove old error borders
   nameInput.classList.remove("input-error");
   emailInput.classList.remove("input-error");
   phoneInput.classList.remove("input-error");
   passwordInput.classList.remove("input-error");
   confirmPasswordInput.classList.remove("input-error");
 
-  // Name validation
   if (name === "") {
-    document.getElementById("nameError").textContent =
-      "Full name is required";
+    document.getElementById("nameError").textContent = "Full name is required";
     nameInput.classList.add("input-error");
     return;
   }
@@ -66,10 +61,8 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // Email validation
   if (email === "") {
-    document.getElementById("emailError").textContent =
-      "Email is required.";
+    document.getElementById("emailError").textContent = "Email is required.";
     emailInput.classList.add("input-error");
     return;
   }
@@ -81,7 +74,6 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // Phone validation
   if (phone === "") {
     document.getElementById("phoneError").textContent =
       "Phone number is required.";
@@ -96,7 +88,6 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // Password validation
   if (password === "") {
     document.getElementById("passwordError").textContent =
       "Password is required.";
@@ -111,7 +102,6 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // Confirm password validation
   if (confirmPassword === "") {
     document.getElementById("confirmPasswordError").textContent =
       "Please confirm your password.";
@@ -126,19 +116,19 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // Terms validation
   if (!terms) {
-    showMessage("Please accept the Terms of Service and Privacy Policy.", "error");
+    showMessage(
+      "Please accept the Terms of Service and Privacy Policy.",
+      "error",
+    );
     return;
   }
 
-  // Get registered users
   let registeredUsers =
     JSON.parse(localStorage.getItem("registeredUsers")) || [];
 
-  // Check if email already exists
   const emailExists = registeredUsers.some(
-    (user) => user.email.trim().toLowerCase() === email
+    (user) => user.email.trim().toLowerCase() === email,
   );
 
   if (emailExists) {
@@ -149,22 +139,17 @@ form.addEventListener("submit", function (event) {
     return;
   }
 
-  // Create user
   const user = {
     name,
     email,
     phone,
     address,
-    password
+    password,
   };
 
-  // Save user
   registeredUsers.push(user);
 
-  localStorage.setItem(
-    "registeredUsers",
-    JSON.stringify(registeredUsers)
-  );
+  localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
 
   showMessage("Account created successfully!", "success");
 
@@ -175,15 +160,7 @@ form.addEventListener("submit", function (event) {
   }, 1200);
 });
 
-
-// Remove red border when user starts typing
-const inputs = [
-  "name",
-  "email",
-  "phone",
-  "password",
-  "confirm_password"
-];
+const inputs = ["name", "email", "phone", "password", "confirm_password"];
 
 inputs.forEach((id) => {
   document.getElementById(id).addEventListener("input", function () {
