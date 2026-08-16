@@ -137,8 +137,13 @@ justify-content: center;
     color: black;
 }
 .input-error {
-    border: 1px solid #e02424;
-    background-color: #fff5f5;
+    border: 1px solid red;
+    outline: none;
+}
+
+.input-error:focus {
+    border: 1px solid red;
+
 }
 
 .error-text {
