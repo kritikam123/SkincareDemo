@@ -288,30 +288,11 @@ At Minimalist, we are committed to making skincare simple, effective, and trustw
 
     </aside>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script>
-const menu = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-const navRight = document.querySelector(".nav-right");
-const icon = menu.querySelector("i");
-
-menu.addEventListener("click", () => {
-
-    navLinks.classList.toggle("active");
-    navRight.classList.toggle("active");
-
-    if (navLinks.classList.contains("active")) {
-        icon.classList.remove("fa-bars");
-        icon.classList.add("fa-xmark");
-    } else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-    }
-});
-</script>
 <script src="/global/js/products/products-loader.js"></script>
 <script src="/global/js/cart/cartUtils.js"></script>
 <script src="/global/js/products/products.js"></script> 
 <script src="/global/js/nav/profileIcon.js"></script>
+<script src="/global/js/nav/hamburger.js"></script>
 <script src="/global/js/cart/cart.js"></script>
 <script src="/global/js/carousel/carousel.js"></script>
 <script src="/pages/home/questions.js"></script>
