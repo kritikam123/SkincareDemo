@@ -1,4 +1,3 @@
-
 const cardsPerPage = 8;
 let currentPage = 1;
 

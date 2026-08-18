@@ -41,10 +41,12 @@ document.addEventListener("productsLoaded", function () {
       return;
     }
   });
+
   container.addEventListener("click", function (e) {
     if (e.target.classList.contains("product-info-details")) {
       const id = e.target.dataset.id;
       window.location.href = `/pages/user/details/product-details.html?id=${id}`;
     }
+    
   });
 });
